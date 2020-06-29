@@ -1,4 +1,4 @@
-# stcloud::TagApiControllerApi
+# SematextCloud::TagApiControllerApi
 
 All URIs are relative to *https://localhost*
 
@@ -17,20 +17,20 @@ Gets tag names for the given application identifiers appearing in the given time
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::TagApiControllerApi.new
+api_instance = SematextCloud::TagApiControllerApi.new
 
 app_ids = 'app_ids_example' # String | appIds
 
-opts = { 
+opts = {
   from: 789, # Integer | from
   to: 789, # Integer | to
   metrics: true, # BOOLEAN | metrics
@@ -43,7 +43,7 @@ begin
   #Gets tag names for the given application identifiers appearing in the given time frame.
   result = api_instance.get_tag_names_using_get(app_ids, opts)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling TagApiControllerApi->get_tag_names_using_get: #{e}"
 end
 ```
@@ -52,9 +52,9 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **app_ids** | **String**| appIds | 
- **from** | **Integer**| from | [optional] 
- **to** | **Integer**| to | [optional] 
+ **app_ids** | **String**| appIds |
+ **from** | **Integer**| from | [optional]
+ **to** | **Integer**| to | [optional]
  **metrics** | **BOOLEAN**| metrics | [optional] [default to true]
  **logs** | **BOOLEAN**| logs | [optional] [default to true]
  **events** | **BOOLEAN**| events | [optional] [default to false]
@@ -83,22 +83,22 @@ Gets values for specified tags for the given application identifiers appearing i
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::TagApiControllerApi.new
+api_instance = SematextCloud::TagApiControllerApi.new
 
 app_ids = 'app_ids_example' # String | appIds
 
 tag = ['tag_example'] # Array<String> | tag
 
-opts = { 
+opts = {
   from: 789, # Integer | from
   to: 789, # Integer | to
   metrics: true, # BOOLEAN | metrics
@@ -111,7 +111,7 @@ begin
   #Gets values for specified tags for the given application identifiers appearing in the given time frame.
   result = api_instance.get_using_get1(app_ids, tag, opts)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling TagApiControllerApi->get_using_get1: #{e}"
 end
 ```
@@ -120,10 +120,10 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **app_ids** | **String**| appIds | 
- **tag** | [**Array&lt;String&gt;**](String.md)| tag | 
- **from** | **Integer**| from | [optional] 
- **to** | **Integer**| to | [optional] 
+ **app_ids** | **String**| appIds |
+ **tag** | [**Array&lt;String&gt;**](String.md)| tag |
+ **from** | **Integer**| from | [optional]
+ **to** | **Integer**| to | [optional]
  **metrics** | **BOOLEAN**| metrics | [optional] [default to true]
  **logs** | **BOOLEAN**| logs | [optional] [default to true]
  **events** | **BOOLEAN**| events | [optional] [default to false]
@@ -152,22 +152,22 @@ Gets values for specified tags for the given application identifiers appearing i
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::TagApiControllerApi.new
+api_instance = SematextCloud::TagApiControllerApi.new
 
 app_ids = 'app_ids_example' # String | appIds
 
 tag = ['tag_example'] # Array<String> | tag
 
-opts = { 
+opts = {
   from: 789, # Integer | from
   to: 789, # Integer | to
   metrics: true, # BOOLEAN | metrics
@@ -180,7 +180,7 @@ begin
   #Gets values for specified tags for the given application identifiers appearing in the given time frame.
   result = api_instance.get_using_get2(app_ids, tag, opts)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling TagApiControllerApi->get_using_get2: #{e}"
 end
 ```
@@ -189,10 +189,10 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **app_ids** | **String**| appIds | 
- **tag** | [**Array&lt;String&gt;**](String.md)| tag | 
- **from** | **Integer**| from | [optional] 
- **to** | **Integer**| to | [optional] 
+ **app_ids** | **String**| appIds |
+ **tag** | [**Array&lt;String&gt;**](String.md)| tag |
+ **from** | **Integer**| from | [optional]
+ **to** | **Integer**| to | [optional]
  **metrics** | **BOOLEAN**| metrics | [optional] [default to true]
  **logs** | **BOOLEAN**| logs | [optional] [default to true]
  **events** | **BOOLEAN**| events | [optional] [default to false]
@@ -210,6 +210,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
-
-

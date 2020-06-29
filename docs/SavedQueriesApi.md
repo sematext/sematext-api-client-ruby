@@ -1,4 +1,4 @@
-# stcloud::SavedQueriesApi
+# SematextCloud::SavedQueriesApi
 
 All URIs are relative to *https://localhost*
 
@@ -18,16 +18,16 @@ Delete saved query
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::SavedQueriesApi.new
+api_instance = SematextCloud::SavedQueriesApi.new
 
 updateable_query_id = 789 # Integer | updateableQueryId
 
@@ -36,7 +36,7 @@ begin
   #Delete saved query
   result = api_instance.delete_saved_query_using_delete(updateable_query_id)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling SavedQueriesApi->delete_saved_query_using_delete: #{e}"
 end
 ```
@@ -45,7 +45,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **updateable_query_id** | **Integer**| updateableQueryId | 
+ **updateable_query_id** | **Integer**| updateableQueryId |
 
 ### Return type
 
@@ -70,16 +70,16 @@ Get saved queries for an app
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::SavedQueriesApi.new
+api_instance = SematextCloud::SavedQueriesApi.new
 
 app_id = 789 # Integer | appId
 
@@ -88,7 +88,7 @@ begin
   #Get saved queries for an app
   result = api_instance.get_saved_queries_for_app_using_get(app_id)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling SavedQueriesApi->get_saved_queries_for_app_using_get: #{e}"
 end
 ```
@@ -97,7 +97,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **app_id** | **Integer**| appId | 
+ **app_id** | **Integer**| appId |
 
 ### Return type
 
@@ -122,25 +122,25 @@ Create saved query
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::SavedQueriesApi.new
+api_instance = SematextCloud::SavedQueriesApi.new
 
-saved_query_dto = stcloud::SavedQuery.new # SavedQuery | savedQueryDto
+saved_query_dto = SematextCloud::SavedQuery.new # SavedQuery | savedQueryDto
 
 
 begin
   #Create saved query
   result = api_instance.save_query_using_post(saved_query_dto)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling SavedQueriesApi->save_query_using_post: #{e}"
 end
 ```
@@ -149,7 +149,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **saved_query_dto** | [**SavedQuery**](SavedQuery.md)| savedQueryDto | 
+ **saved_query_dto** | [**SavedQuery**](SavedQuery.md)| savedQueryDto |
 
 ### Return type
 
@@ -174,18 +174,18 @@ Update saved query
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::SavedQueriesApi.new
+api_instance = SematextCloud::SavedQueriesApi.new
 
-saved_query_dto = stcloud::SavedQuery.new # SavedQuery | savedQueryDto
+saved_query_dto = SematextCloud::SavedQuery.new # SavedQuery | savedQueryDto
 
 updateable_query_id = 789 # Integer | updateableQueryId
 
@@ -194,7 +194,7 @@ begin
   #Update saved query
   result = api_instance.save_query_using_put(saved_query_dto, updateable_query_id)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling SavedQueriesApi->save_query_using_put: #{e}"
 end
 ```
@@ -203,8 +203,8 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **saved_query_dto** | [**SavedQuery**](SavedQuery.md)| savedQueryDto | 
- **updateable_query_id** | **Integer**| updateableQueryId | 
+ **saved_query_dto** | [**SavedQuery**](SavedQuery.md)| savedQueryDto |
+ **updateable_query_id** | **Integer**| updateableQueryId |
 
 ### Return type
 
@@ -218,6 +218,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
-
-

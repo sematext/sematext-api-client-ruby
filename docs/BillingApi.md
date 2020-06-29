@@ -1,4 +1,4 @@
-# stcloud::BillingApi
+# SematextCloud::BillingApi
 
 All URIs are relative to *https://localhost*
 
@@ -17,16 +17,16 @@ Get invoice details
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::BillingApi.new
+api_instance = SematextCloud::BillingApi.new
 
 service = 'service_example' # String | service
 
@@ -39,7 +39,7 @@ begin
   #Get invoice details
   result = api_instance.get_detailed_invoice_using_get(service, year, month)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling BillingApi->get_detailed_invoice_using_get: #{e}"
 end
 ```
@@ -48,9 +48,9 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **service** | **String**| service | 
- **year** | **Integer**| year | 
- **month** | **Integer**| month | 
+ **service** | **String**| service |
+ **year** | **Integer**| year |
+ **month** | **Integer**| month |
 
 ### Return type
 
@@ -75,18 +75,18 @@ Get available plans
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::BillingApi.new
+api_instance = SematextCloud::BillingApi.new
 
-opts = { 
+opts = {
   integration_id: 789, # Integer | integrationId
   app_type: 'app_type_example' # String | appType
 }
@@ -95,7 +95,7 @@ begin
   #Get available plans
   result = api_instance.list_available_plans_using_get(opts)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling BillingApi->list_available_plans_using_get: #{e}"
 end
 ```
@@ -104,8 +104,8 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **integration_id** | **Integer**| integrationId | [optional] 
- **app_type** | **String**| appType | [optional] 
+ **integration_id** | **Integer**| integrationId | [optional]
+ **app_type** | **String**| appType | [optional]
 
 ### Return type
 
@@ -130,27 +130,27 @@ Update plan for an app
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::BillingApi.new
+api_instance = SematextCloud::BillingApi.new
 
 app_id = 789 # Integer | appId
 
-dto = stcloud::BillingInfo.new # BillingInfo | dto
+dto = SematextCloud::BillingInfo.new # BillingInfo | dto
 
 
 begin
   #Update plan for an app
   result = api_instance.update_plan_using_put(app_id, dto)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling BillingApi->update_plan_using_put: #{e}"
 end
 ```
@@ -159,8 +159,8 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **app_id** | **Integer**| appId | 
- **dto** | [**BillingInfo**](BillingInfo.md)| dto | 
+ **app_id** | **Integer**| appId |
+ **dto** | [**BillingInfo**](BillingInfo.md)| dto |
 
 ### Return type
 
@@ -174,6 +174,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
-
-

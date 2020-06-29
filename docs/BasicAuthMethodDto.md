@@ -1,9 +1,7 @@
-# stcloud::BasicAuthMethodDto
+# SematextCloud::BasicAuthMethodDto
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**auth_type** | **String** |  | [optional] 
-**uuid** | **String** |  | [optional] 
-
-
+**auth_type** | **String** |  | [optional]
+**uuid** | **String** |  | [optional]

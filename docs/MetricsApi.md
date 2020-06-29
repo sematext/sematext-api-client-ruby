@@ -1,4 +1,4 @@
-# stcloud::MetricsApi
+# SematextCloud::MetricsApi
 
 All URIs are relative to *https://localhost*
 
@@ -20,27 +20,27 @@ Default value of interval is 5m
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::MetricsApi.new
+api_instance = SematextCloud::MetricsApi.new
 
 app_id = 789 # Integer | appId
 
-request_body = stcloud::DataSeriesRequest.new # DataSeriesRequest | Metric data points request
+request_body = SematextCloud::DataSeriesRequest.new # DataSeriesRequest | Metric data points request
 
 
 begin
   #Get metrics data points for an app
   result = api_instance.list_data_series_using_post(app_id, request_body)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling MetricsApi->list_data_series_using_post: #{e}"
 end
 ```
@@ -49,8 +49,8 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **app_id** | **Integer**| appId | 
- **request_body** | [**DataSeriesRequest**](DataSeriesRequest.md)| Metric data points request | 
+ **app_id** | **Integer**| appId |
+ **request_body** | [**DataSeriesRequest**](DataSeriesRequest.md)| Metric data points request |
 
 ### Return type
 
@@ -77,27 +77,27 @@ Default value of interval is 5m
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::MetricsApi.new
+api_instance = SematextCloud::MetricsApi.new
 
 app_id = 789 # Integer | appId
 
-request_body = stcloud::DataSeriesRequest.new # DataSeriesRequest | Metric filters request
+request_body = SematextCloud::DataSeriesRequest.new # DataSeriesRequest | Metric filters request
 
 
 begin
   #Get metrics filters and their values for an app
   result = api_instance.list_filters_using_post(app_id, request_body)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling MetricsApi->list_filters_using_post: #{e}"
 end
 ```
@@ -106,8 +106,8 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **app_id** | **Integer**| appId | 
- **request_body** | [**DataSeriesRequest**](DataSeriesRequest.md)| Metric filters request | 
+ **app_id** | **Integer**| appId |
+ **request_body** | [**DataSeriesRequest**](DataSeriesRequest.md)| Metric filters request |
 
 ### Return type
 
@@ -132,16 +132,16 @@ Get metrics keys for an app
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::MetricsApi.new
+api_instance = SematextCloud::MetricsApi.new
 
 app_id = 789 # Integer | appId
 
@@ -150,7 +150,7 @@ begin
   #Get metrics keys for an app
   result = api_instance.list_metrics_keys_using_get(app_id)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling MetricsApi->list_metrics_keys_using_get: #{e}"
 end
 ```
@@ -159,7 +159,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **app_id** | **Integer**| appId | 
+ **app_id** | **Integer**| appId |
 
 ### Return type
 
@@ -184,16 +184,16 @@ Get metrics info for an app
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::MetricsApi.new
+api_instance = SematextCloud::MetricsApi.new
 
 app_id = 789 # Integer | appId
 
@@ -202,7 +202,7 @@ begin
   #Get metrics info for an app
   result = api_instance.list_metrics_using_get(app_id)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling MetricsApi->list_metrics_using_get: #{e}"
 end
 ```
@@ -211,7 +211,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **app_id** | **Integer**| appId | 
+ **app_id** | **Integer**| appId |
 
 ### Return type
 
@@ -225,6 +225,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
-
-

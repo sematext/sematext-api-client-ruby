@@ -1,4 +1,4 @@
-# stcloud::AppsApi
+# SematextCloud::AppsApi
 
 All URIs are relative to *https://localhost*
 
@@ -21,22 +21,22 @@ Get all App types supported for the account identified with apiKey
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::AppsApi.new
+api_instance = SematextCloud::AppsApi.new
 
 begin
   #Get all App types supported for the account identified with apiKey
   result = api_instance.get_app_types_using_get
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling AppsApi->get_app_types_using_get: #{e}"
 end
 ```
@@ -67,16 +67,16 @@ Gets defails for one particular App
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::AppsApi.new
+api_instance = SematextCloud::AppsApi.new
 
 any_state_app_id = 789 # Integer | anyStateAppId
 
@@ -85,7 +85,7 @@ begin
   #Gets defails for one particular App
   result = api_instance.get_using_get(any_state_app_id)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling AppsApi->get_using_get: #{e}"
 end
 ```
@@ -94,7 +94,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **any_state_app_id** | **Integer**| anyStateAppId | 
+ **any_state_app_id** | **Integer**| anyStateAppId |
 
 ### Return type
 
@@ -119,25 +119,25 @@ Invite guests to an app
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::AppsApi.new
+api_instance = SematextCloud::AppsApi.new
 
-invitation = stcloud::Invitation.new # Invitation | For `app` and `apps` fields only `id` needs to be populated.Other fields can be left empty or with default values
+invitation = SematextCloud::Invitation.new # Invitation | For `app` and `apps` fields only `id` needs to be populated.Other fields can be left empty or with default values
 
 
 begin
   #Invite guests to an app
   result = api_instance.invite_app_guests_using_post(invitation)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling AppsApi->invite_app_guests_using_post: #{e}"
 end
 ```
@@ -146,7 +146,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **invitation** | [**Invitation**](Invitation.md)| For &#x60;app&#x60; and &#x60;apps&#x60; fields only &#x60;id&#x60; needs to be populated.Other fields can be left empty or with default values | 
+ **invitation** | [**Invitation**](Invitation.md)| For &#x60;app&#x60; and &#x60;apps&#x60; fields only &#x60;id&#x60; needs to be populated.Other fields can be left empty or with default values |
 
 ### Return type
 
@@ -171,22 +171,22 @@ Get all users of apps accessible to this account
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::AppsApi.new
+api_instance = SematextCloud::AppsApi.new
 
 begin
   #Get all users of apps accessible to this account
   result = api_instance.list_apps_users_using_get
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling AppsApi->list_apps_users_using_get: #{e}"
 end
 ```
@@ -217,22 +217,22 @@ Get all apps accessible by account identified with apiKey
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::AppsApi.new
+api_instance = SematextCloud::AppsApi.new
 
 begin
   #Get all apps accessible by account identified with apiKey
   result = api_instance.list_using_get
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling AppsApi->list_using_get: #{e}"
 end
 ```
@@ -265,28 +265,28 @@ App can be in any state
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::AppsApi.new
+api_instance = SematextCloud::AppsApi.new
 
 any_state_app_id = 789 # Integer | App Id
 
-opts = { 
-  update_details: stcloud::AppDescription.new # AppDescription | Update Details
+opts = {
+  update_details: SematextCloud::AppDescription.new # AppDescription | Update Details
 }
 
 begin
   #Update description of the app
   result = api_instance.update_description_using_put(any_state_app_id, opts)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling AppsApi->update_description_using_put: #{e}"
 end
 ```
@@ -295,8 +295,8 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **any_state_app_id** | **Integer**| App Id | 
- **update_details** | [**AppDescription**](AppDescription.md)| Update Details | [optional] 
+ **any_state_app_id** | **Integer**| App Id |
+ **update_details** | [**AppDescription**](AppDescription.md)| Update Details | [optional]
 
 ### Return type
 
@@ -323,18 +323,18 @@ App can be in any state
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::AppsApi.new
+api_instance = SematextCloud::AppsApi.new
 
-dto = stcloud::UpdateAppInfo.new # UpdateAppInfo | dto
+dto = SematextCloud::UpdateAppInfo.new # UpdateAppInfo | dto
 
 any_state_app_id = 789 # Integer | App Id
 
@@ -343,7 +343,7 @@ begin
   #Update app
   result = api_instance.update_using_put1(dto, any_state_app_id)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling AppsApi->update_using_put1: #{e}"
 end
 ```
@@ -352,8 +352,8 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **dto** | [**UpdateAppInfo**](UpdateAppInfo.md)| dto | 
- **any_state_app_id** | **Integer**| App Id | 
+ **dto** | [**UpdateAppInfo**](UpdateAppInfo.md)| dto |
+ **any_state_app_id** | **Integer**| App Id |
 
 ### Return type
 
@@ -367,6 +367,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
-
-

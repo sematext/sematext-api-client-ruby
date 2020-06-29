@@ -12,14 +12,14 @@ Swagger Codegen version: 2.4.12
 
 require 'spec_helper'
 
-describe stcloud::Configuration do
-  let(:config) { stcloud::Configuration.default }
+describe SematextCloud::Configuration do
+  let(:config) { SematextCloud::Configuration.default }
 
   before(:each) do
     # uncomment below to setup host and base_path
     # require 'URI'
     # uri = URI.parse("https://localhost")
-    # stcloud.configure do |c|
+    # SematextCloud.configure do |c|
     #   c.host = uri.host
     #   c.base_path = uri.path
     # end
