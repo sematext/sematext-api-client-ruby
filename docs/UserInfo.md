@@ -1,8 +1,6 @@
-# stcloud::UserInfo
+# SematextCloud::UserInfo
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**login_name** | **String** |  | [optional] 
-
-
+**login_name** | **String** |  | [optional]

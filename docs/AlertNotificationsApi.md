@@ -1,4 +1,4 @@
-# stcloud::AlertNotificationsApi
+# SematextCloud::AlertNotificationsApi
 
 All URIs are relative to *https://localhost*
 
@@ -18,27 +18,27 @@ Default value of interval is 1d
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::AlertNotificationsApi.new
+api_instance = SematextCloud::AlertNotificationsApi.new
 
 app_id = 789 # Integer | appId
 
-time_interval = stcloud::AlertNotificationRequest.new # AlertNotificationRequest | Time Interval
+time_interval = SematextCloud::AlertNotificationRequest.new # AlertNotificationRequest | Time Interval
 
 
 begin
   #Get alert notifications for an app
   result = api_instance.get_alert_notifications_for_app_using_post(app_id, time_interval)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling AlertNotificationsApi->get_alert_notifications_for_app_using_post: #{e}"
 end
 ```
@@ -47,8 +47,8 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **app_id** | **Integer**| appId | 
- **time_interval** | [**AlertNotificationRequest**](AlertNotificationRequest.md)| Time Interval | 
+ **app_id** | **Integer**| appId |
+ **time_interval** | [**AlertNotificationRequest**](AlertNotificationRequest.md)| Time Interval |
 
 ### Return type
 
@@ -75,25 +75,25 @@ Default value of interval is 1d
 ### Example
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::AlertNotificationsApi.new
+api_instance = SematextCloud::AlertNotificationsApi.new
 
-time_interval = stcloud::AlertNotificationRequest.new # AlertNotificationRequest | Time Interval
+time_interval = SematextCloud::AlertNotificationRequest.new # AlertNotificationRequest | Time Interval
 
 
 begin
   #Get alert notifications for a user
   result = api_instance.get_alert_notifications_for_user_using_post(time_interval)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling AlertNotificationsApi->get_alert_notifications_for_user_using_post: #{e}"
 end
 ```
@@ -102,7 +102,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **time_interval** | [**AlertNotificationRequest**](AlertNotificationRequest.md)| Time Interval | 
+ **time_interval** | [**AlertNotificationRequest**](AlertNotificationRequest.md)| Time Interval |
 
 ### Return type
 
@@ -116,6 +116,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
-
-

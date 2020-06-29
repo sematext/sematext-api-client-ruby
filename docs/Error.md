@@ -1,9 +1,7 @@
-# stcloud::Error
+# SematextCloud::Error
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **String** |  | [optional] 
-**message** | **String** |  | [optional] 
-
-
+**code** | **String** |  | [optional]
+**message** | **String** |  | [optional]
