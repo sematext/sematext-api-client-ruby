@@ -38,7 +38,6 @@ Refer to below link for deeper information on the API itself.
   - [Installation](#installation)
   - [Getting Started](#getting-started)
   - [Authentication](#authentication)
-  - [Testing](#testing)
   - [Reference](#reference)
   - [Documentation for Models](#documentation-for-models)
 
