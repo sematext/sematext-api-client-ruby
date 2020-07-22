@@ -4,6 +4,10 @@ on:
   release:
     types: [created]
 
+env:
+  GEM_HOST_API_KEY: "Bearer ${{secrets.RUBYGEMS_AUTH_TOKEN}}"
+
+
 jobs:
   build:
     name: Build + Publish
@@ -11,11 +15,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Ruby 2.6
+    - name: Set up Ruby
       uses: actions/setup-ruby@v1
       with:
         ruby-version: 2.7.x
-
     - name: Publish to RubyGems
       run: |
         mkdir -p $HOME/.gem
@@ -24,5 +27,3 @@ jobs:
         printf -- "---\n:rubygems_api_key: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
         gem build *.gemspec
         gem push *.gem
-      env:
-        GEM_HOST_API_KEY: "Bearer ${{secrets.RUBYGEMS_AUTH_TOKEN}}"
