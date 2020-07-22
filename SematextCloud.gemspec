@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.version     = SematextCloud::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["sematext.com"]
-  s.email       = ["support@sematext.com"]
+  s.email       = ["packages@sematext.com"]
   s.homepage    = "https://github.com/sematext/sematext-api-client-ruby"
   s.summary     = "Sematext Cloud API Client for talking to https://sematext.com/docs/api/"
   s.description = "Sematext Cloud API Client for talking to https://sematext.com/docs/api/"
