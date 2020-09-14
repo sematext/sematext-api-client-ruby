@@ -56,15 +56,15 @@ gem build SematextCloud.gemspec
 Then either install the gem locally:
 
 ```shell
-gem install ./SematextCloud-0.1.0.gem
+gem install ./SematextCloud-0.1.2.gem
 ```
-(for development, run `gem install --dev ./SematextCloud-0.1.0.gem` to install the development dependencies)
+(for development, run `gem install --dev ./SematextCloud-0.1.2.gem` to install the development dependencies)
 
 or publish the gem to a gem hosting service, e.g. [RubyGems](https://rubygems.org/).
 
 Finally add this to the Gemfile:
 
-    gem 'SematextCloud', '~> 0.1.0'
+    gem 'SematextCloud', '~> 0.1.2'
 
 ### Install from Git
 
