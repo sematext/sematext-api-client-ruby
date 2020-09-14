@@ -1,5 +1,5 @@
 
-# <img src="./assets/octi-blue.png" valign="bottom" width="60px"/>**&nbsp;&nbsp;sematext-api-client-ruby**
+# <img src="https://sematext.com/wp-content/uploads/2020/09/just-octi-blue.png" valign="bottom" width="60px"/>**&nbsp;&nbsp;sematext-api-client-ruby**
 
 <br>
 
@@ -56,15 +56,15 @@ gem build SematextCloud.gemspec
 Then either install the gem locally:
 
 ```shell
-gem install ./SematextCloud-0.1.2.gem
+gem install ./SematextCloud-0.1.3.gem
 ```
-(for development, run `gem install --dev ./SematextCloud-0.1.2.gem` to install the development dependencies)
+(for development, run `gem install --dev ./SematextCloud-0.1.3.gem` to install the development dependencies)
 
 or publish the gem to a gem hosting service, e.g. [RubyGems](https://rubygems.org/).
 
 Finally add this to the Gemfile:
 
-    gem 'SematextCloud', '~> 0.1.2'
+    gem 'SematextCloud', '~> 0.1.3'
 
 ### Install from Git
 
