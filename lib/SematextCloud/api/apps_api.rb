@@ -19,6 +19,58 @@ module SematextCloud
     def initialize(api_client = ApiClient.default)
       @api_client = api_client
     end
+    # delete
+    # @param any_state_app_id anyStateAppId
+    # @param [Hash] opts the optional parameters
+    # @return [GenericApiResponse]
+    def delete_using_delete(any_state_app_id, opts = {})
+      data, _status_code, _headers = delete_using_delete_with_http_info(any_state_app_id, opts)
+      data
+    end
+
+    # delete
+    # @param any_state_app_id anyStateAppId
+    # @param [Hash] opts the optional parameters
+    # @return [Array<(GenericApiResponse, Fixnum, Hash)>] GenericApiResponse data, response status code and response headers
+    def delete_using_delete_with_http_info(any_state_app_id, opts = {})
+      if @api_client.config.debugging
+        @api_client.config.logger.debug 'Calling API: AppsApi.delete_using_delete ...'
+      end
+      # verify the required parameter 'any_state_app_id' is set
+      if @api_client.config.client_side_validation && any_state_app_id.nil?
+        fail ArgumentError, "Missing the required parameter 'any_state_app_id' when calling AppsApi.delete_using_delete"
+      end
+      # resource path
+      local_var_path = '/users-web/api/v3/apps/{anyStateAppId}'.sub('{' + 'anyStateAppId' + '}', any_state_app_id.to_s)
+
+      # query parameters
+      query_params = {}
+
+      # header parameters
+      header_params = {}
+      # HTTP header 'Accept' (if needed)
+      header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      # HTTP header 'Content-Type'
+      header_params['Content-Type'] = @api_client.select_header_content_type(['application/json'])
+
+      # form parameters
+      form_params = {}
+
+      # http body (model)
+      post_body = nil
+      auth_names = ['api_key']
+      data, status_code, headers = @api_client.call_api(:DELETE, local_var_path,
+        :header_params => header_params,
+        :query_params => query_params,
+        :form_params => form_params,
+        :body => post_body,
+        :auth_names => auth_names,
+        :return_type => 'GenericApiResponse')
+      if @api_client.config.debugging
+        @api_client.config.logger.debug "API called: AppsApi#delete_using_delete\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+      end
+      return data, status_code, headers
+    end    
     # Get all App types supported for the account identified with apiKey
     # @param [Hash] opts the optional parameters
     # @return [GenericApiResponse]
