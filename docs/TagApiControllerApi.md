@@ -2,11 +2,11 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_tag_names_using_get**](TagApiControllerApi.md#get_tag_names_using_get) | **GET** /spm-reports/api/v3/apps/{appIds}/tagNames | Gets tag names for the given application identifiers appearing in the given time frame.
-[**get_using_get1**](TagApiControllerApi.md#get_using_get1) | **GET** /spm-reports/api/v3/apps/{appIds}/tags | Gets values for specified tags for the given application identifiers appearing in the given time frame.
-[**get_using_get2**](TagApiControllerApi.md#get_using_get2) | **GET** /spm-reports/api/v3/apps/{appIds}/metrics/filters | Gets values for specified tags for the given application identifiers appearing in the given time frame.
+| Method                                                                        | HTTP request                                              | Description                                                                                             |
+| ----------------------------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| [**get_tag_names_using_get**](TagApiControllerApi.md#get_tag_names_using_get) | **GET** /spm-reports/api/v3/apps/{appIds}/tagNames        | Gets tag names for the given application identifiers appearing in the given time frame.                 |
+| [**get_using_get1**](TagApiControllerApi.md#get_using_get1)                   | **GET** /spm-reports/api/v3/apps/{appIds}/tags            | Gets values for specified tags for the given application identifiers appearing in the given time frame. |
+| [**get_using_get2**](TagApiControllerApi.md#get_using_get2)                   | **GET** /spm-reports/api/v3/apps/{appIds}/metrics/filters | Gets values for specified tags for the given application identifiers appearing in the given time frame. |
 
 
 # **get_tag_names_using_get**
@@ -50,15 +50,15 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **app_ids** | **String**| appIds |
- **from** | **Integer**| from | [optional]
- **to** | **Integer**| to | [optional]
- **metrics** | **BOOLEAN**| metrics | [optional] [default to true]
- **logs** | **BOOLEAN**| logs | [optional] [default to true]
- **events** | **BOOLEAN**| events | [optional] [default to false]
- **rum** | **BOOLEAN**| rum | [optional] [default to true]
+| Name        | Type        | Description | Notes                         |
+| ----------- | ----------- | ----------- | ----------------------------- |
+| **app_ids** | **String**  | appIds      |
+| **from**    | **Integer** | from        | [optional]                    |
+| **to**      | **Integer** | to          | [optional]                    |
+| **metrics** | **BOOLEAN** | metrics     | [optional] [default to true]  |
+| **logs**    | **BOOLEAN** | logs        | [optional] [default to true]  |
+| **events**  | **BOOLEAN** | events      | [optional] [default to false] |
+| **rum**     | **BOOLEAN** | rum         | [optional] [default to true]  |
 
 ### Return type
 
@@ -118,16 +118,16 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **app_ids** | **String**| appIds |
- **tag** | [**Array&lt;String&gt;**](String.md)| tag |
- **from** | **Integer**| from | [optional]
- **to** | **Integer**| to | [optional]
- **metrics** | **BOOLEAN**| metrics | [optional] [default to true]
- **logs** | **BOOLEAN**| logs | [optional] [default to true]
- **events** | **BOOLEAN**| events | [optional] [default to false]
- **rum** | **BOOLEAN**| rum | [optional] [default to true]
+| Name        | Type                                 | Description | Notes                         |
+| ----------- | ------------------------------------ | ----------- | ----------------------------- |
+| **app_ids** | **String**                           | appIds      |
+| **tag**     | [**Array&lt;String&gt;**](String.md) | tag         |
+| **from**    | **Integer**                          | from        | [optional]                    |
+| **to**      | **Integer**                          | to          | [optional]                    |
+| **metrics** | **BOOLEAN**                          | metrics     | [optional] [default to true]  |
+| **logs**    | **BOOLEAN**                          | logs        | [optional] [default to true]  |
+| **events**  | **BOOLEAN**                          | events      | [optional] [default to false] |
+| **rum**     | **BOOLEAN**                          | rum         | [optional] [default to true]  |
 
 ### Return type
 
@@ -187,16 +187,16 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **app_ids** | **String**| appIds |
- **tag** | [**Array&lt;String&gt;**](String.md)| tag |
- **from** | **Integer**| from | [optional]
- **to** | **Integer**| to | [optional]
- **metrics** | **BOOLEAN**| metrics | [optional] [default to true]
- **logs** | **BOOLEAN**| logs | [optional] [default to true]
- **events** | **BOOLEAN**| events | [optional] [default to false]
- **rum** | **BOOLEAN**| rum | [optional] [default to true]
+| Name        | Type                                 | Description | Notes                         |
+| ----------- | ------------------------------------ | ----------- | ----------------------------- |
+| **app_ids** | **String**                           | appIds      |
+| **tag**     | [**Array&lt;String&gt;**](String.md) | tag         |
+| **from**    | **Integer**                          | from        | [optional]                    |
+| **to**      | **Integer**                          | to          | [optional]                    |
+| **metrics** | **BOOLEAN**                          | metrics     | [optional] [default to true]  |
+| **logs**    | **BOOLEAN**                          | logs        | [optional] [default to true]  |
+| **events**  | **BOOLEAN**                          | events      | [optional] [default to false] |
+| **rum**     | **BOOLEAN**                          | rum         | [optional] [default to true]  |
 
 ### Return type
 

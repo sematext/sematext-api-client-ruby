@@ -2,11 +2,11 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_detailed_invoice_using_get**](BillingApi.md#get_detailed_invoice_using_get) | **GET** /users-web/api/v3/billing/invoice/{service}/{year}/{month} | Get invoice details
-[**list_available_plans_using_get**](BillingApi.md#list_available_plans_using_get) | **GET** /users-web/api/v3/billing/availablePlans | Get available plans
-[**update_plan_using_put**](BillingApi.md#update_plan_using_put) | **PUT** /users-web/api/v3/billing/info/{appId} | Update plan for an app
+| Method                                                                             | HTTP request                                                       | Description            |
+| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ---------------------- |
+| [**get_detailed_invoice_using_get**](BillingApi.md#get_detailed_invoice_using_get) | **GET** /users-web/api/v3/billing/invoice/{service}/{year}/{month} | Get invoice details    |
+| [**list_available_plans_using_get**](BillingApi.md#list_available_plans_using_get) | **GET** /users-web/api/v3/billing/availablePlans                   | Get available plans    |
+| [**update_plan_using_put**](BillingApi.md#update_plan_using_put)                   | **PUT** /users-web/api/v3/billing/info/{appId}                     | Update plan for an app |
 
 
 # **get_detailed_invoice_using_get**
@@ -46,11 +46,11 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **String**| service |
- **year** | **Integer**| year |
- **month** | **Integer**| month |
+| Name        | Type        | Description | Notes |
+| ----------- | ----------- | ----------- | ----- |
+| **service** | **String**  | service     |
+| **year**    | **Integer** | year        |
+| **month**   | **Integer** | month       |
 
 ### Return type
 
@@ -102,10 +102,10 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **integration_id** | **Integer**| integrationId | [optional]
- **app_type** | **String**| appType | [optional]
+| Name               | Type        | Description   | Notes      |
+| ------------------ | ----------- | ------------- | ---------- |
+| **integration_id** | **Integer** | integrationId | [optional] |
+| **app_type**       | **String**  | appType       | [optional] |
 
 ### Return type
 
@@ -157,10 +157,10 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **app_id** | **Integer**| appId |
- **dto** | [**BillingInfo**](BillingInfo.md)| dto |
+| Name       | Type                              | Description | Notes |
+| ---------- | --------------------------------- | ----------- | ----- |
+| **app_id** | **Integer**                       | appId       |
+| **dto**    | [**BillingInfo**](BillingInfo.md) | dto         |
 
 ### Return type
 

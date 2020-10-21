@@ -2,10 +2,10 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_alert_notifications_for_app_using_post**](AlertNotificationsApi.md#get_alert_notifications_for_app_using_post) | **POST** /users-web/api/v3/apps/{appId}/notifications/alerts | Get alert notifications for an app
-[**get_alert_notifications_for_user_using_post**](AlertNotificationsApi.md#get_alert_notifications_for_user_using_post) | **POST** /users-web/api/v3/notifications/alerts | Get alert notifications for a user
+| Method                                                                                                                  | HTTP request                                                 | Description                        |
+| ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------- |
+| [**get_alert_notifications_for_app_using_post**](AlertNotificationsApi.md#get_alert_notifications_for_app_using_post)   | **POST** /users-web/api/v3/apps/{appId}/notifications/alerts | Get alert notifications for an app |
+| [**get_alert_notifications_for_user_using_post**](AlertNotificationsApi.md#get_alert_notifications_for_user_using_post) | **POST** /users-web/api/v3/notifications/alerts              | Get alert notifications for a user |
 
 
 # **get_alert_notifications_for_app_using_post**
@@ -45,10 +45,10 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **app_id** | **Integer**| appId |
- **time_interval** | [**AlertNotificationRequest**](AlertNotificationRequest.md)| Time Interval |
+| Name              | Type                                                        | Description   | Notes |
+| ----------------- | ----------------------------------------------------------- | ------------- | ----- |
+| **app_id**        | **Integer**                                                 | appId         |
+| **time_interval** | [**AlertNotificationRequest**](AlertNotificationRequest.md) | Time Interval |
 
 ### Return type
 
@@ -100,9 +100,9 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **time_interval** | [**AlertNotificationRequest**](AlertNotificationRequest.md)| Time Interval |
+| Name              | Type                                                        | Description   | Notes |
+| ----------------- | ----------------------------------------------------------- | ------------- | ----- |
+| **time_interval** | [**AlertNotificationRequest**](AlertNotificationRequest.md) | Time Interval |
 
 ### Return type
 

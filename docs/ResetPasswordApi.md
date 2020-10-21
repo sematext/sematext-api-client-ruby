@@ -2,9 +2,9 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**reset_password_using_post**](ResetPasswordApi.md#reset_password_using_post) | **POST** /users-web/api/v3/account/password/reset | Reset Password
+| Method                                                                         | HTTP request                                      | Description    |
+| ------------------------------------------------------------------------------ | ------------------------------------------------- | -------------- |
+| [**reset_password_using_post**](ResetPasswordApi.md#reset_password_using_post) | **POST** /users-web/api/v3/account/password/reset | Reset Password |
 
 
 # **reset_password_using_post**
@@ -40,9 +40,9 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **dto** | [**UserInfo**](UserInfo.md)| dto |
+| Name    | Type                        | Description | Notes |
+| ------- | --------------------------- | ----------- | ----- |
+| **dto** | [**UserInfo**](UserInfo.md) | dto         |
 
 ### Return type
 

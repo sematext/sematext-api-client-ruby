@@ -19,26 +19,194 @@ module SematextCloud
     def initialize(api_client = ApiClient.default)
       @api_client = api_client
     end
-    # Get subscriptions for an app
+    # Create App subscription
     # @param app_id appId
+    # @param subscription subscription
     # @param [Hash] opts the optional parameters
     # @return [GenericApiResponse]
-    def list_using_get1(app_id, opts = {})
-      data, _status_code, _headers = list_using_get1_with_http_info(app_id, opts)
+    def create_for_app_using_post(app_id, subscription, opts = {})
+      data, _status_code, _headers = create_for_app_using_post_with_http_info(app_id, subscription, opts)
       data
     end
 
-    # Get subscriptions for an app
+    # Create App subscription
     # @param app_id appId
+    # @param subscription subscription
     # @param [Hash] opts the optional parameters
     # @return [Array<(GenericApiResponse, Fixnum, Hash)>] GenericApiResponse data, response status code and response headers
-    def list_using_get1_with_http_info(app_id, opts = {})
+    def create_for_app_using_post_with_http_info(app_id, subscription, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: SubscriptionsApi.list_using_get1 ...'
+        @api_client.config.logger.debug 'Calling API: SubscriptionsApi.create_for_app_using_post ...'
       end
       # verify the required parameter 'app_id' is set
       if @api_client.config.client_side_validation && app_id.nil?
-        fail ArgumentError, "Missing the required parameter 'app_id' when calling SubscriptionsApi.list_using_get1"
+        fail ArgumentError, "Missing the required parameter 'app_id' when calling SubscriptionsApi.create_for_app_using_post"
+      end
+      # verify the required parameter 'subscription' is set
+      if @api_client.config.client_side_validation && subscription.nil?
+        fail ArgumentError, "Missing the required parameter 'subscription' when calling SubscriptionsApi.create_for_app_using_post"
+      end
+      # resource path
+      local_var_path = '/users-web/api/v3/apps/{appId}/subscription'.sub('{' + 'appId' + '}', app_id.to_s)
+
+      # query parameters
+      query_params = {}
+
+      # header parameters
+      header_params = {}
+      # HTTP header 'Accept' (if needed)
+      header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      # HTTP header 'Content-Type'
+      header_params['Content-Type'] = @api_client.select_header_content_type(['application/json'])
+
+      # form parameters
+      form_params = {}
+
+      # http body (model)
+      post_body = @api_client.object_to_http_body(subscription)
+      auth_names = ['api_key']
+      data, status_code, headers = @api_client.call_api(:POST, local_var_path,
+        :header_params => header_params,
+        :query_params => query_params,
+        :form_params => form_params,
+        :body => post_body,
+        :auth_names => auth_names,
+        :return_type => 'GenericApiResponse')
+      if @api_client.config.debugging
+        @api_client.config.logger.debug "API called: SubscriptionsApi#create_for_app_using_post\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+      end
+      return data, status_code, headers
+    end
+    # Create dashboard subscription
+    # @param dash_id dashId
+    # @param subscription subscription
+    # @param [Hash] opts the optional parameters
+    # @return [GenericApiResponse]
+    def create_for_dash_using_post1(dash_id, subscription, opts = {})
+      data, _status_code, _headers = create_for_dash_using_post1_with_http_info(dash_id, subscription, opts)
+      data
+    end
+
+    # Create dashboard subscription
+    # @param dash_id dashId
+    # @param subscription subscription
+    # @param [Hash] opts the optional parameters
+    # @return [Array<(GenericApiResponse, Fixnum, Hash)>] GenericApiResponse data, response status code and response headers
+    def create_for_dash_using_post1_with_http_info(dash_id, subscription, opts = {})
+      if @api_client.config.debugging
+        @api_client.config.logger.debug 'Calling API: SubscriptionsApi.create_for_dash_using_post1 ...'
+      end
+      # verify the required parameter 'dash_id' is set
+      if @api_client.config.client_side_validation && dash_id.nil?
+        fail ArgumentError, "Missing the required parameter 'dash_id' when calling SubscriptionsApi.create_for_dash_using_post1"
+      end
+      # verify the required parameter 'subscription' is set
+      if @api_client.config.client_side_validation && subscription.nil?
+        fail ArgumentError, "Missing the required parameter 'subscription' when calling SubscriptionsApi.create_for_dash_using_post1"
+      end
+      # resource path
+      local_var_path = '/users-web/api/v3/dashboards/{dashId}/subscription'.sub('{' + 'dashId' + '}', dash_id.to_s)
+
+      # query parameters
+      query_params = {}
+
+      # header parameters
+      header_params = {}
+      # HTTP header 'Accept' (if needed)
+      header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      # HTTP header 'Content-Type'
+      header_params['Content-Type'] = @api_client.select_header_content_type(['application/json'])
+
+      # form parameters
+      form_params = {}
+
+      # http body (model)
+      post_body = @api_client.object_to_http_body(subscription)
+      auth_names = ['api_key']
+      data, status_code, headers = @api_client.call_api(:POST, local_var_path,
+        :header_params => header_params,
+        :query_params => query_params,
+        :form_params => form_params,
+        :body => post_body,
+        :auth_names => auth_names,
+        :return_type => 'GenericApiResponse')
+      if @api_client.config.debugging
+        @api_client.config.logger.debug "API called: SubscriptionsApi#create_for_dash_using_post1\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+      end
+      return data, status_code, headers
+    end
+    # Delete subscription
+    # @param updateable_subscription_id updateableSubscriptionId
+    # @param [Hash] opts the optional parameters
+    # @return [GenericApiResponse]
+    def delete_using_delete2(updateable_subscription_id, opts = {})
+      data, _status_code, _headers = delete_using_delete2_with_http_info(updateable_subscription_id, opts)
+      data
+    end
+
+    # Delete subscription
+    # @param updateable_subscription_id updateableSubscriptionId
+    # @param [Hash] opts the optional parameters
+    # @return [Array<(GenericApiResponse, Fixnum, Hash)>] GenericApiResponse data, response status code and response headers
+    def delete_using_delete2_with_http_info(updateable_subscription_id, opts = {})
+      if @api_client.config.debugging
+        @api_client.config.logger.debug 'Calling API: SubscriptionsApi.delete_using_delete2 ...'
+      end
+      # verify the required parameter 'updateable_subscription_id' is set
+      if @api_client.config.client_side_validation && updateable_subscription_id.nil?
+        fail ArgumentError, "Missing the required parameter 'updateable_subscription_id' when calling SubscriptionsApi.delete_using_delete2"
+      end
+      # resource path
+      local_var_path = '/users-web/api/v3/subscriptions/{updateableSubscriptionId}'.sub('{' + 'updateableSubscriptionId' + '}', updateable_subscription_id.to_s)
+
+      # query parameters
+      query_params = {}
+
+      # header parameters
+      header_params = {}
+      # HTTP header 'Accept' (if needed)
+      header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      # HTTP header 'Content-Type'
+      header_params['Content-Type'] = @api_client.select_header_content_type(['application/json'])
+
+      # form parameters
+      form_params = {}
+
+      # http body (model)
+      post_body = nil
+      auth_names = ['api_key']
+      data, status_code, headers = @api_client.call_api(:DELETE, local_var_path,
+        :header_params => header_params,
+        :query_params => query_params,
+        :form_params => form_params,
+        :body => post_body,
+        :auth_names => auth_names,
+        :return_type => 'GenericApiResponse')
+      if @api_client.config.debugging
+        @api_client.config.logger.debug "API called: SubscriptionsApi#delete_using_delete2\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+      end
+      return data, status_code, headers
+    end
+    # Get subscriptions for an App
+    # @param app_id appId
+    # @param [Hash] opts the optional parameters
+    # @return [GenericApiResponse]
+    def list_using_get2(app_id, opts = {})
+      data, _status_code, _headers = list_using_get2_with_http_info(app_id, opts)
+      data
+    end
+
+    # Get subscriptions for an App
+    # @param app_id appId
+    # @param [Hash] opts the optional parameters
+    # @return [Array<(GenericApiResponse, Fixnum, Hash)>] GenericApiResponse data, response status code and response headers
+    def list_using_get2_with_http_info(app_id, opts = {})
+      if @api_client.config.debugging
+        @api_client.config.logger.debug 'Calling API: SubscriptionsApi.list_using_get2 ...'
+      end
+      # verify the required parameter 'app_id' is set
+      if @api_client.config.client_side_validation && app_id.nil?
+        fail ArgumentError, "Missing the required parameter 'app_id' when calling SubscriptionsApi.list_using_get2"
       end
       # resource path
       local_var_path = '/users-web/api/v3/apps/{appId}/subscriptions'.sub('{' + 'appId' + '}', app_id.to_s)
@@ -67,36 +235,82 @@ module SematextCloud
         :auth_names => auth_names,
         :return_type => 'GenericApiResponse')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: SubscriptionsApi#list_using_get1\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: SubscriptionsApi#list_using_get2\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
-    # Trigger emailing of report for an app
+    # Get current account's subscriptions
+    # @param [Hash] opts the optional parameters
+    # @return [GenericApiResponse]
+    def list_using_get5(opts = {})
+      data, _status_code, _headers = list_using_get5_with_http_info(opts)
+      data
+    end
+
+    # Get current account&#39;s subscriptions
+    # @param [Hash] opts the optional parameters
+    # @return [Array<(GenericApiResponse, Fixnum, Hash)>] GenericApiResponse data, response status code and response headers
+    def list_using_get5_with_http_info(opts = {})
+      if @api_client.config.debugging
+        @api_client.config.logger.debug 'Calling API: SubscriptionsApi.list_using_get5 ...'
+      end
+      # resource path
+      local_var_path = '/users-web/api/v3/subscriptions'
+
+      # query parameters
+      query_params = {}
+
+      # header parameters
+      header_params = {}
+      # HTTP header 'Accept' (if needed)
+      header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      # HTTP header 'Content-Type'
+      header_params['Content-Type'] = @api_client.select_header_content_type(['application/json'])
+
+      # form parameters
+      form_params = {}
+
+      # http body (model)
+      post_body = nil
+      auth_names = ['api_key']
+      data, status_code, headers = @api_client.call_api(:GET, local_var_path,
+        :header_params => header_params,
+        :query_params => query_params,
+        :form_params => form_params,
+        :body => post_body,
+        :auth_names => auth_names,
+        :return_type => 'GenericApiResponse')
+      if @api_client.config.debugging
+        @api_client.config.logger.debug "API called: SubscriptionsApi#list_using_get5\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+      end
+      return data, status_code, headers
+    end
+    # Email an App report
     # @param app_id appId
     # @param email_dto emailDto
     # @param [Hash] opts the optional parameters
     # @return [GenericApiResponse]
-    def send_report_using_post(app_id, email_dto, opts = {})
-      data, _status_code, _headers = send_report_using_post_with_http_info(app_id, email_dto, opts)
+    def send_app_report_using_post1(app_id, email_dto, opts = {})
+      data, _status_code, _headers = send_app_report_using_post1_with_http_info(app_id, email_dto, opts)
       data
     end
 
-    # Trigger emailing of report for an app
+    # Email an App report
     # @param app_id appId
     # @param email_dto emailDto
     # @param [Hash] opts the optional parameters
     # @return [Array<(GenericApiResponse, Fixnum, Hash)>] GenericApiResponse data, response status code and response headers
-    def send_report_using_post_with_http_info(app_id, email_dto, opts = {})
+    def send_app_report_using_post1_with_http_info(app_id, email_dto, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: SubscriptionsApi.send_report_using_post ...'
+        @api_client.config.logger.debug 'Calling API: SubscriptionsApi.send_app_report_using_post1 ...'
       end
       # verify the required parameter 'app_id' is set
       if @api_client.config.client_side_validation && app_id.nil?
-        fail ArgumentError, "Missing the required parameter 'app_id' when calling SubscriptionsApi.send_report_using_post"
+        fail ArgumentError, "Missing the required parameter 'app_id' when calling SubscriptionsApi.send_app_report_using_post1"
       end
       # verify the required parameter 'email_dto' is set
       if @api_client.config.client_side_validation && email_dto.nil?
-        fail ArgumentError, "Missing the required parameter 'email_dto' when calling SubscriptionsApi.send_report_using_post"
+        fail ArgumentError, "Missing the required parameter 'email_dto' when calling SubscriptionsApi.send_app_report_using_post1"
       end
       # resource path
       local_var_path = '/users-web/api/v3/apps/{appId}/report/send'.sub('{' + 'appId' + '}', app_id.to_s)
@@ -125,7 +339,239 @@ module SematextCloud
         :auth_names => auth_names,
         :return_type => 'GenericApiResponse')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: SubscriptionsApi#send_report_using_post\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: SubscriptionsApi#send_app_report_using_post1\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+      end
+      return data, status_code, headers
+    end
+    # Email a dashboard report
+    # @param dash_id dashId
+    # @param email_dto emailDto
+    # @param [Hash] opts the optional parameters
+    # @return [GenericApiResponse]
+    def send_dash_report_using_post1(dash_id, email_dto, opts = {})
+      data, _status_code, _headers = send_dash_report_using_post1_with_http_info(dash_id, email_dto, opts)
+      data
+    end
+
+    # Email a dashboard report
+    # @param dash_id dashId
+    # @param email_dto emailDto
+    # @param [Hash] opts the optional parameters
+    # @return [Array<(GenericApiResponse, Fixnum, Hash)>] GenericApiResponse data, response status code and response headers
+    def send_dash_report_using_post1_with_http_info(dash_id, email_dto, opts = {})
+      if @api_client.config.debugging
+        @api_client.config.logger.debug 'Calling API: SubscriptionsApi.send_dash_report_using_post1 ...'
+      end
+      # verify the required parameter 'dash_id' is set
+      if @api_client.config.client_side_validation && dash_id.nil?
+        fail ArgumentError, "Missing the required parameter 'dash_id' when calling SubscriptionsApi.send_dash_report_using_post1"
+      end
+      # verify the required parameter 'email_dto' is set
+      if @api_client.config.client_side_validation && email_dto.nil?
+        fail ArgumentError, "Missing the required parameter 'email_dto' when calling SubscriptionsApi.send_dash_report_using_post1"
+      end
+      # resource path
+      local_var_path = '/users-web/api/v3/dashboards/{dashId}/report/send'.sub('{' + 'dashId' + '}', dash_id.to_s)
+
+      # query parameters
+      query_params = {}
+
+      # header parameters
+      header_params = {}
+      # HTTP header 'Accept' (if needed)
+      header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      # HTTP header 'Content-Type'
+      header_params['Content-Type'] = @api_client.select_header_content_type(['application/json'])
+
+      # form parameters
+      form_params = {}
+
+      # http body (model)
+      post_body = @api_client.object_to_http_body(email_dto)
+      auth_names = ['api_key']
+      data, status_code, headers = @api_client.call_api(:POST, local_var_path,
+        :header_params => header_params,
+        :query_params => query_params,
+        :form_params => form_params,
+        :body => post_body,
+        :auth_names => auth_names,
+        :return_type => 'GenericApiResponse')
+      if @api_client.config.debugging
+        @api_client.config.logger.debug "API called: SubscriptionsApi#send_dash_report_using_post1\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+      end
+      return data, status_code, headers
+    end
+    # Toggle subscription status
+    # @param updateable_subscription_id updateableSubscriptionId
+    # @param dto dto
+    # @param [Hash] opts the optional parameters
+    # @return [GenericApiResponse]
+    def toggle_enabled_using_put1(updateable_subscription_id, dto, opts = {})
+      data, _status_code, _headers = toggle_enabled_using_put1_with_http_info(updateable_subscription_id, dto, opts)
+      data
+    end
+
+    # Toggle subscription status
+    # @param updateable_subscription_id updateableSubscriptionId
+    # @param dto dto
+    # @param [Hash] opts the optional parameters
+    # @return [Array<(GenericApiResponse, Fixnum, Hash)>] GenericApiResponse data, response status code and response headers
+    def toggle_enabled_using_put1_with_http_info(updateable_subscription_id, dto, opts = {})
+      if @api_client.config.debugging
+        @api_client.config.logger.debug 'Calling API: SubscriptionsApi.toggle_enabled_using_put1 ...'
+      end
+      # verify the required parameter 'updateable_subscription_id' is set
+      if @api_client.config.client_side_validation && updateable_subscription_id.nil?
+        fail ArgumentError, "Missing the required parameter 'updateable_subscription_id' when calling SubscriptionsApi.toggle_enabled_using_put1"
+      end
+      # verify the required parameter 'dto' is set
+      if @api_client.config.client_side_validation && dto.nil?
+        fail ArgumentError, "Missing the required parameter 'dto' when calling SubscriptionsApi.toggle_enabled_using_put1"
+      end
+      # resource path
+      local_var_path = '/users-web/api/v3/subscriptions/{updateableSubscriptionId}'.sub('{' + 'updateableSubscriptionId' + '}', updateable_subscription_id.to_s)
+
+      # query parameters
+      query_params = {}
+
+      # header parameters
+      header_params = {}
+      # HTTP header 'Accept' (if needed)
+      header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      # HTTP header 'Content-Type'
+      header_params['Content-Type'] = @api_client.select_header_content_type(['application/json'])
+
+      # form parameters
+      form_params = {}
+
+      # http body (model)
+      post_body = @api_client.object_to_http_body(dto)
+      auth_names = ['api_key']
+      data, status_code, headers = @api_client.call_api(:PUT, local_var_path,
+        :header_params => header_params,
+        :query_params => query_params,
+        :form_params => form_params,
+        :body => post_body,
+        :auth_names => auth_names,
+        :return_type => 'GenericApiResponse')
+      if @api_client.config.debugging
+        @api_client.config.logger.debug "API called: SubscriptionsApi#toggle_enabled_using_put1\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+      end
+      return data, status_code, headers
+    end
+    # Update App subscription
+    # @param app_id appId
+    # @param subscription subscription
+    # @param [Hash] opts the optional parameters
+    # @return [GenericApiResponse]
+    def update_for_app_using_put1(app_id, subscription, opts = {})
+      data, _status_code, _headers = update_for_app_using_put1_with_http_info(app_id, subscription, opts)
+      data
+    end
+
+    # Update App subscription
+    # @param app_id appId
+    # @param subscription subscription
+    # @param [Hash] opts the optional parameters
+    # @return [Array<(GenericApiResponse, Fixnum, Hash)>] GenericApiResponse data, response status code and response headers
+    def update_for_app_using_put1_with_http_info(app_id, subscription, opts = {})
+      if @api_client.config.debugging
+        @api_client.config.logger.debug 'Calling API: SubscriptionsApi.update_for_app_using_put1 ...'
+      end
+      # verify the required parameter 'app_id' is set
+      if @api_client.config.client_side_validation && app_id.nil?
+        fail ArgumentError, "Missing the required parameter 'app_id' when calling SubscriptionsApi.update_for_app_using_put1"
+      end
+      # verify the required parameter 'subscription' is set
+      if @api_client.config.client_side_validation && subscription.nil?
+        fail ArgumentError, "Missing the required parameter 'subscription' when calling SubscriptionsApi.update_for_app_using_put1"
+      end
+      # resource path
+      local_var_path = '/users-web/api/v3/apps/{appId}/subscription'.sub('{' + 'appId' + '}', app_id.to_s)
+
+      # query parameters
+      query_params = {}
+
+      # header parameters
+      header_params = {}
+      # HTTP header 'Accept' (if needed)
+      header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      # HTTP header 'Content-Type'
+      header_params['Content-Type'] = @api_client.select_header_content_type(['application/json'])
+
+      # form parameters
+      form_params = {}
+
+      # http body (model)
+      post_body = @api_client.object_to_http_body(subscription)
+      auth_names = ['api_key']
+      data, status_code, headers = @api_client.call_api(:PUT, local_var_path,
+        :header_params => header_params,
+        :query_params => query_params,
+        :form_params => form_params,
+        :body => post_body,
+        :auth_names => auth_names,
+        :return_type => 'GenericApiResponse')
+      if @api_client.config.debugging
+        @api_client.config.logger.debug "API called: SubscriptionsApi#update_for_app_using_put1\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+      end
+      return data, status_code, headers
+    end
+    # Update dashboard subscription
+    # @param dash_id dashId
+    # @param subscription subscription
+    # @param [Hash] opts the optional parameters
+    # @return [GenericApiResponse]
+    def update_for_dash_using_put(dash_id, subscription, opts = {})
+      data, _status_code, _headers = update_for_dash_using_put_with_http_info(dash_id, subscription, opts)
+      data
+    end
+
+    # Update dashboard subscription
+    # @param dash_id dashId
+    # @param subscription subscription
+    # @param [Hash] opts the optional parameters
+    # @return [Array<(GenericApiResponse, Fixnum, Hash)>] GenericApiResponse data, response status code and response headers
+    def update_for_dash_using_put_with_http_info(dash_id, subscription, opts = {})
+      if @api_client.config.debugging
+        @api_client.config.logger.debug 'Calling API: SubscriptionsApi.update_for_dash_using_put ...'
+      end
+      # verify the required parameter 'dash_id' is set
+      if @api_client.config.client_side_validation && dash_id.nil?
+        fail ArgumentError, "Missing the required parameter 'dash_id' when calling SubscriptionsApi.update_for_dash_using_put"
+      end
+      # verify the required parameter 'subscription' is set
+      if @api_client.config.client_side_validation && subscription.nil?
+        fail ArgumentError, "Missing the required parameter 'subscription' when calling SubscriptionsApi.update_for_dash_using_put"
+      end
+      # resource path
+      local_var_path = '/users-web/api/v3/dashboards/{dashId}/subscription'.sub('{' + 'dashId' + '}', dash_id.to_s)
+
+      # query parameters
+      query_params = {}
+
+      # header parameters
+      header_params = {}
+      # HTTP header 'Accept' (if needed)
+      header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      # HTTP header 'Content-Type'
+      header_params['Content-Type'] = @api_client.select_header_content_type(['application/json'])
+
+      # form parameters
+      form_params = {}
+
+      # http body (model)
+      post_body = @api_client.object_to_http_body(subscription)
+      auth_names = ['api_key']
+      data, status_code, headers = @api_client.call_api(:PUT, local_var_path,
+        :header_params => header_params,
+        :query_params => query_params,
+        :form_params => form_params,
+        :body => post_body,
+        :auth_names => auth_names,
+        :return_type => 'GenericApiResponse')
+      if @api_client.config.debugging
+        @api_client.config.logger.debug "API called: SubscriptionsApi#update_for_dash_using_put\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
