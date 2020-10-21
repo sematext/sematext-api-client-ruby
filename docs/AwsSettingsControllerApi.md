@@ -2,9 +2,9 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**update_using_put**](AwsSettingsControllerApi.md#update_using_put) | **PUT** /users-web/api/v3/apps/{appId}/aws | Update App&#39;s AWS CloudWatch settings
+| Method                                                               | HTTP request                               | Description                              |
+| -------------------------------------------------------------------- | ------------------------------------------ | ---------------------------------------- |
+| [**update_using_put**](AwsSettingsControllerApi.md#update_using_put) | **PUT** /users-web/api/v3/apps/{appId}/aws | Update App&#39;s AWS CloudWatch settings |
 
 
 # **update_using_put**
@@ -44,10 +44,10 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **app_id** | **Integer**| appId |
- **dto** | [**CloudWatchSettings**](CloudWatchSettings.md)| dto |
+| Name       | Type                                            | Description | Notes |
+| ---------- | ----------------------------------------------- | ----------- | ----- |
+| **app_id** | **Integer**                                     | appId       |
+| **dto**    | [**CloudWatchSettings**](CloudWatchSettings.md) | dto         |
 
 ### Return type
 

@@ -2,12 +2,12 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**list_data_series_using_post**](MetricsApi.md#list_data_series_using_post) | **POST** /spm-reports/api/v3/apps/{appId}/metrics/data | Get metrics data points for an app
-[**list_filters_using_post**](MetricsApi.md#list_filters_using_post) | **POST** /spm-reports/api/v3/apps/{appId}/metrics/filters | Get metrics filters and their values for an app
-[**list_metrics_keys_using_get**](MetricsApi.md#list_metrics_keys_using_get) | **GET** /spm-reports/api/v3/apps/{appId}/metrics/keys | Get metrics keys for an app
-[**list_metrics_using_get**](MetricsApi.md#list_metrics_using_get) | **GET** /spm-reports/api/v3/apps/{appId}/metrics | Get metrics info for an app
+| Method                                                                       | HTTP request                                              | Description                                     |
+| ---------------------------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------------- |
+| [**list_data_series_using_post**](MetricsApi.md#list_data_series_using_post) | **POST** /spm-reports/api/v3/apps/{appId}/metrics/data    | Get metrics data points for an app              |
+| [**list_filters_using_post**](MetricsApi.md#list_filters_using_post)         | **POST** /spm-reports/api/v3/apps/{appId}/metrics/filters | Get metrics filters and their values for an app |
+| [**list_metrics_keys_using_get**](MetricsApi.md#list_metrics_keys_using_get) | **GET** /spm-reports/api/v3/apps/{appId}/metrics/keys     | Get metrics keys for an app                     |
+| [**list_metrics_using_get**](MetricsApi.md#list_metrics_using_get)           | **GET** /spm-reports/api/v3/apps/{appId}/metrics          | Get metrics info for an app                     |
 
 
 # **list_data_series_using_post**
@@ -47,10 +47,10 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **app_id** | **Integer**| appId |
- **request_body** | [**DataSeriesRequest**](DataSeriesRequest.md)| Metric data points request |
+| Name             | Type                                          | Description                | Notes |
+| ---------------- | --------------------------------------------- | -------------------------- | ----- |
+| **app_id**       | **Integer**                                   | appId                      |
+| **request_body** | [**DataSeriesRequest**](DataSeriesRequest.md) | Metric data points request |
 
 ### Return type
 
@@ -104,10 +104,10 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **app_id** | **Integer**| appId |
- **request_body** | [**DataSeriesRequest**](DataSeriesRequest.md)| Metric filters request |
+| Name             | Type                                          | Description            | Notes |
+| ---------------- | --------------------------------------------- | ---------------------- | ----- |
+| **app_id**       | **Integer**                                   | appId                  |
+| **request_body** | [**DataSeriesRequest**](DataSeriesRequest.md) | Metric filters request |
 
 ### Return type
 
@@ -157,9 +157,9 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **app_id** | **Integer**| appId |
+| Name       | Type        | Description | Notes |
+| ---------- | ----------- | ----------- | ----- |
+| **app_id** | **Integer** | appId       |
 
 ### Return type
 
@@ -209,9 +209,9 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **app_id** | **Integer**| appId |
+| Name       | Type        | Description | Notes |
+| ---------- | ----------- | ----------- | ----- |
+| **app_id** | **Integer** | appId       |
 
 ### Return type
 
