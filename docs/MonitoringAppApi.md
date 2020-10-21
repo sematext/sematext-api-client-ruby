@@ -2,9 +2,9 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_spm_application1**](MonitoringAppApi.md#create_spm_application1) | **POST** /spm-reports/api/v3/apps | Create Monitoring App
+| Method                                                                     | HTTP request                      | Description           |
+| -------------------------------------------------------------------------- | --------------------------------- | --------------------- |
+| [**create_spm_application1**](MonitoringAppApi.md#create_spm_application1) | **POST** /spm-reports/api/v3/apps | Create Monitoring App |
 
 
 # **create_spm_application1**
@@ -40,9 +40,9 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **application_details** | [**CreateAppInfo**](CreateAppInfo.md)| Details of the application to be created |
+| Name                    | Type                                  | Description                              | Notes |
+| ----------------------- | ------------------------------------- | ---------------------------------------- | ----- |
+| **application_details** | [**CreateAppInfo**](CreateAppInfo.md) | Details of the application to be created |
 
 ### Return type
 

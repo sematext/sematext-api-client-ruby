@@ -2,9 +2,9 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_logsene_application**](LogsAppApi.md#create_logsene_application) | **POST** /logsene-reports/api/v3/apps | Create Logs App
+| Method                                                                     | HTTP request                          | Description     |
+| -------------------------------------------------------------------------- | ------------------------------------- | --------------- |
+| [**create_logsene_application**](LogsAppApi.md#create_logsene_application) | **POST** /logsene-reports/api/v3/apps | Create Logs App |
 
 
 # **create_logsene_application**
@@ -40,9 +40,9 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **application_details** | [**CreateAppInfo**](CreateAppInfo.md)| Details of the application to be created |
+| Name                    | Type                                  | Description                              | Notes |
+| ----------------------- | ------------------------------------- | ---------------------------------------- | ----- |
+| **application_details** | [**CreateAppInfo**](CreateAppInfo.md) | Details of the application to be created |
 
 ### Return type
 

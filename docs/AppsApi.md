@@ -2,15 +2,15 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_app_types_using_get**](AppsApi.md#get_app_types_using_get) | **GET** /users-web/api/v3/apps/types | Get all App types supported for the account identified with apiKey
-[**get_using_get**](AppsApi.md#get_using_get) | **GET** /users-web/api/v3/apps/{anyStateAppId} | Gets defails for one particular App
-[**invite_app_guests_using_post**](AppsApi.md#invite_app_guests_using_post) | **POST** /users-web/api/v3/apps/guests | Invite guests to an app
-[**list_apps_users_using_get**](AppsApi.md#list_apps_users_using_get) | **GET** /users-web/api/v3/apps/users | Get all users of apps accessible to this account
-[**list_using_get**](AppsApi.md#list_using_get) | **GET** /users-web/api/v3/apps | Get all apps accessible by account identified with apiKey
-[**update_description_using_put**](AppsApi.md#update_description_using_put) | **PUT** /users-web/api/v3/apps/{anyStateAppId}/description | Update description of the app
-[**update_using_put1**](AppsApi.md#update_using_put1) | **PUT** /users-web/api/v3/apps/{anyStateAppId} | Update app
+| Method                                                                      | HTTP request                                               | Description                                                        |
+| --------------------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------ |
+| [**get_app_types_using_get**](AppsApi.md#get_app_types_using_get)           | **GET** /users-web/api/v3/apps/types                       | Get all App types supported for the account identified with apiKey |
+| [**get_using_get**](AppsApi.md#get_using_get)                               | **GET** /users-web/api/v3/apps/{anyStateAppId}             | Gets defails for one particular App                                |
+| [**invite_app_guests_using_post**](AppsApi.md#invite_app_guests_using_post) | **POST** /users-web/api/v3/apps/guests                     | Invite guests to an app                                            |
+| [**list_apps_users_using_get**](AppsApi.md#list_apps_users_using_get)       | **GET** /users-web/api/v3/apps/users                       | Get all users of apps accessible to this account                   |
+| [**list_using_get**](AppsApi.md#list_using_get)                             | **GET** /users-web/api/v3/apps                             | Get all apps accessible by account identified with apiKey          |
+| [**update_description_using_put**](AppsApi.md#update_description_using_put) | **PUT** /users-web/api/v3/apps/{anyStateAppId}/description | Update description of the app                                      |
+| [**update_using_put1**](AppsApi.md#update_using_put1)                       | **PUT** /users-web/api/v3/apps/{anyStateAppId}             | Update app                                                         |
 
 
 # **get_app_types_using_get**
@@ -92,9 +92,9 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **any_state_app_id** | **Integer**| anyStateAppId |
+| Name                 | Type        | Description   | Notes |
+| -------------------- | ----------- | ------------- | ----- |
+| **any_state_app_id** | **Integer** | anyStateAppId |
 
 ### Return type
 
@@ -144,9 +144,9 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **invitation** | [**Invitation**](Invitation.md)| For &#x60;app&#x60; and &#x60;apps&#x60; fields only &#x60;id&#x60; needs to be populated.Other fields can be left empty or with default values |
+| Name           | Type                            | Description                                                                                                                                     | Notes |
+| -------------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| **invitation** | [**Invitation**](Invitation.md) | For &#x60;app&#x60; and &#x60;apps&#x60; fields only &#x60;id&#x60; needs to be populated.Other fields can be left empty or with default values |
 
 ### Return type
 
@@ -293,10 +293,10 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **any_state_app_id** | **Integer**| App Id |
- **update_details** | [**AppDescription**](AppDescription.md)| Update Details | [optional]
+| Name                 | Type                                    | Description    | Notes      |
+| -------------------- | --------------------------------------- | -------------- | ---------- |
+| **any_state_app_id** | **Integer**                             | App Id         |
+| **update_details**   | [**AppDescription**](AppDescription.md) | Update Details | [optional] |
 
 ### Return type
 
@@ -350,10 +350,10 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **dto** | [**UpdateAppInfo**](UpdateAppInfo.md)| dto |
- **any_state_app_id** | **Integer**| App Id |
+| Name                 | Type                                  | Description | Notes |
+| -------------------- | ------------------------------------- | ----------- | ----- |
+| **dto**              | [**UpdateAppInfo**](UpdateAppInfo.md) | dto         |
+| **any_state_app_id** | **Integer**                           | App Id      |
 
 ### Return type
 

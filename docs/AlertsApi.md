@@ -2,13 +2,13 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**create_alert_using_post**](AlertsApi.md#create_alert_using_post) | **POST** /users-web/api/v3/alerts | Create alert rule
-[**delete_alert_rule_using_delete**](AlertsApi.md#delete_alert_rule_using_delete) | **DELETE** /users-web/api/v3/alerts/{updateableAlertId} | Delete alert rule
-[**disable_alert_rule_using_put**](AlertsApi.md#disable_alert_rule_using_put) | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/disable | Disable alert rule
-[**enable_alert_rule_using_put**](AlertsApi.md#enable_alert_rule_using_put) | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/enable | Enable alert rule
-[**get_alert_rules_for_app_using_get**](AlertsApi.md#get_alert_rules_for_app_using_get) | **GET** /users-web/api/v3/apps/{appId}/alerts | Get alert rules for an app
+| Method                                                                                  | HTTP request                                                 | Description                |
+| --------------------------------------------------------------------------------------- | ------------------------------------------------------------ | -------------------------- |
+| [**create_alert_using_post**](AlertsApi.md#create_alert_using_post)                     | **POST** /users-web/api/v3/alerts                            | Create alert rule          |
+| [**delete_alert_rule_using_delete**](AlertsApi.md#delete_alert_rule_using_delete)       | **DELETE** /users-web/api/v3/alerts/{updateableAlertId}      | Delete alert rule          |
+| [**disable_alert_rule_using_put**](AlertsApi.md#disable_alert_rule_using_put)           | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/disable | Disable alert rule         |
+| [**enable_alert_rule_using_put**](AlertsApi.md#enable_alert_rule_using_put)             | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/enable  | Enable alert rule          |
+| [**get_alert_rules_for_app_using_get**](AlertsApi.md#get_alert_rules_for_app_using_get) | **GET** /users-web/api/v3/apps/{appId}/alerts                | Get alert rules for an app |
 
 
 # **create_alert_using_post**
@@ -44,9 +44,9 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **dto** | [**AlertRule**](AlertRule.md)| dto |
+| Name    | Type                          | Description | Notes |
+| ------- | ----------------------------- | ----------- | ----- |
+| **dto** | [**AlertRule**](AlertRule.md) | dto         |
 
 ### Return type
 
@@ -96,9 +96,9 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **updateable_alert_id** | **Integer**| updateableAlertId |
+| Name                    | Type        | Description       | Notes |
+| ----------------------- | ----------- | ----------------- | ----- |
+| **updateable_alert_id** | **Integer** | updateableAlertId |
 
 ### Return type
 
@@ -148,9 +148,9 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **updateable_alert_id** | **Integer**| updateableAlertId |
+| Name                    | Type        | Description       | Notes |
+| ----------------------- | ----------- | ----------------- | ----- |
+| **updateable_alert_id** | **Integer** | updateableAlertId |
 
 ### Return type
 
@@ -200,9 +200,9 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **updateable_alert_id** | **Integer**| updateableAlertId |
+| Name                    | Type        | Description       | Notes |
+| ----------------------- | ----------- | ----------------- | ----- |
+| **updateable_alert_id** | **Integer** | updateableAlertId |
 
 ### Return type
 
@@ -252,9 +252,9 @@ end
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **app_id** | **Integer**| appId |
+| Name       | Type        | Description | Notes |
+| ---------- | ----------- | ----------- | ----- |
+| **app_id** | **Integer** | appId       |
 
 ### Return type
 
