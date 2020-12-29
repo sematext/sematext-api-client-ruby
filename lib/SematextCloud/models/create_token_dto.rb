@@ -14,6 +14,8 @@ require 'date'
 
 module stcloud
   class CreateTokenDto
+    attr_accessor :name
+
     attr_accessor :readable
 
     attr_accessor :writeable
@@ -21,6 +23,7 @@ module stcloud
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
+        :'name' => :'name',
         :'readable' => :'readable',
         :'writeable' => :'writeable'
       }
@@ -29,6 +32,7 @@ module stcloud
     # Attribute type mapping.
     def self.swagger_types
       {
+        :'name' => :'String',
         :'readable' => :'BOOLEAN',
         :'writeable' => :'BOOLEAN'
       }
@@ -41,6 +45,10 @@ module stcloud
 
       # convert string to symbol for hash key
       attributes = attributes.each_with_object({}) { |(k, v), h| h[k.to_sym] = v }
+
+      if attributes.has_key?(:'name')
+        self.name = attributes[:'name']
+      end
 
       if attributes.has_key?(:'readable')
         self.readable = attributes[:'readable']
@@ -69,6 +77,7 @@ module stcloud
     def ==(o)
       return true if self.equal?(o)
       self.class == o.class &&
+          name == o.name &&
           readable == o.readable &&
           writeable == o.writeable
     end
@@ -82,7 +91,7 @@ module stcloud
     # Calculates hash code according to all attributes.
     # @return [Fixnum] Hash code
     def hash
-      [readable, writeable].hash
+      [name, readable, writeable].hash
     end
 
     # Builds the object from hash

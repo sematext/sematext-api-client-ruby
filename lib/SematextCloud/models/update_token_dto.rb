@@ -16,17 +16,21 @@ module stcloud
   class UpdateTokenDto
     attr_accessor :enabled
 
+    attr_accessor :name
+
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
-        :'enabled' => :'enabled'
+        :'enabled' => :'enabled',
+        :'name' => :'name'
       }
     end
 
     # Attribute type mapping.
     def self.swagger_types
       {
-        :'enabled' => :'BOOLEAN'
+        :'enabled' => :'BOOLEAN',
+        :'name' => :'String'
       }
     end
 
@@ -40,6 +44,10 @@ module stcloud
 
       if attributes.has_key?(:'enabled')
         self.enabled = attributes[:'enabled']
+      end
+
+      if attributes.has_key?(:'name')
+        self.name = attributes[:'name']
       end
     end
 
@@ -61,7 +69,8 @@ module stcloud
     def ==(o)
       return true if self.equal?(o)
       self.class == o.class &&
-          enabled == o.enabled
+          enabled == o.enabled &&
+          name == o.name
     end
 
     # @see the `==` method
@@ -73,7 +82,7 @@ module stcloud
     # Calculates hash code according to all attributes.
     # @return [Fixnum] Hash code
     def hash
-      [enabled].hash
+      [enabled, name].hash
     end
 
     # Builds the object from hash
