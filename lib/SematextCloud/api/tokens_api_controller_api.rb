@@ -24,8 +24,8 @@ module stcloud
     # @param dto dto
     # @param [Hash] opts the optional parameters
     # @return [GenericApiResponse]
-    def create_app_token(app_id, dto, opts = {})
-      data, _status_code, _headers = create_app_token_with_http_info(app_id, dto, opts)
+    def create_app_token1(app_id, dto, opts = {})
+      data, _status_code, _headers = create_app_token1_with_http_info(app_id, dto, opts)
       data
     end
 
@@ -34,17 +34,17 @@ module stcloud
     # @param dto dto
     # @param [Hash] opts the optional parameters
     # @return [Array<(GenericApiResponse, Fixnum, Hash)>] GenericApiResponse data, response status code and response headers
-    def create_app_token_with_http_info(app_id, dto, opts = {})
+    def create_app_token1_with_http_info(app_id, dto, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: TokensApiControllerApi.create_app_token ...'
+        @api_client.config.logger.debug 'Calling API: TokensApiControllerApi.create_app_token1 ...'
       end
       # verify the required parameter 'app_id' is set
       if @api_client.config.client_side_validation && app_id.nil?
-        fail ArgumentError, "Missing the required parameter 'app_id' when calling TokensApiControllerApi.create_app_token"
+        fail ArgumentError, "Missing the required parameter 'app_id' when calling TokensApiControllerApi.create_app_token1"
       end
       # verify the required parameter 'dto' is set
       if @api_client.config.client_side_validation && dto.nil?
-        fail ArgumentError, "Missing the required parameter 'dto' when calling TokensApiControllerApi.create_app_token"
+        fail ArgumentError, "Missing the required parameter 'dto' when calling TokensApiControllerApi.create_app_token1"
       end
       # resource path
       local_var_path = '/users-web/api/v3/apps/{appId}/tokens'.sub('{' + 'appId' + '}', app_id.to_s)
@@ -73,7 +73,7 @@ module stcloud
         :auth_names => auth_names,
         :return_type => 'GenericApiResponse')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: TokensApiControllerApi#create_app_token\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: TokensApiControllerApi#create_app_token1\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -139,8 +139,8 @@ module stcloud
     # @param app_id appId
     # @param [Hash] opts the optional parameters
     # @return [GenericApiResponse]
-    def get_app_tokens1(app_id, opts = {})
-      data, _status_code, _headers = get_app_tokens1_with_http_info(app_id, opts)
+    def get_app_tokens(app_id, opts = {})
+      data, _status_code, _headers = get_app_tokens_with_http_info(app_id, opts)
       data
     end
 
@@ -148,13 +148,13 @@ module stcloud
     # @param app_id appId
     # @param [Hash] opts the optional parameters
     # @return [Array<(GenericApiResponse, Fixnum, Hash)>] GenericApiResponse data, response status code and response headers
-    def get_app_tokens1_with_http_info(app_id, opts = {})
+    def get_app_tokens_with_http_info(app_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: TokensApiControllerApi.get_app_tokens1 ...'
+        @api_client.config.logger.debug 'Calling API: TokensApiControllerApi.get_app_tokens ...'
       end
       # verify the required parameter 'app_id' is set
       if @api_client.config.client_side_validation && app_id.nil?
-        fail ArgumentError, "Missing the required parameter 'app_id' when calling TokensApiControllerApi.get_app_tokens1"
+        fail ArgumentError, "Missing the required parameter 'app_id' when calling TokensApiControllerApi.get_app_tokens"
       end
       # resource path
       local_var_path = '/users-web/api/v3/apps/{appId}/tokens'.sub('{' + 'appId' + '}', app_id.to_s)
@@ -183,7 +183,7 @@ module stcloud
         :auth_names => auth_names,
         :return_type => 'GenericApiResponse')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: TokensApiControllerApi#get_app_tokens1\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: TokensApiControllerApi#get_app_tokens\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -192,8 +192,8 @@ module stcloud
     # @param token_id tokenId
     # @param [Hash] opts the optional parameters
     # @return [GenericApiResponse]
-    def regenerate_app_token(app_id, token_id, opts = {})
-      data, _status_code, _headers = regenerate_app_token_with_http_info(app_id, token_id, opts)
+    def regenerate_app_token1(app_id, token_id, opts = {})
+      data, _status_code, _headers = regenerate_app_token1_with_http_info(app_id, token_id, opts)
       data
     end
 
@@ -202,17 +202,17 @@ module stcloud
     # @param token_id tokenId
     # @param [Hash] opts the optional parameters
     # @return [Array<(GenericApiResponse, Fixnum, Hash)>] GenericApiResponse data, response status code and response headers
-    def regenerate_app_token_with_http_info(app_id, token_id, opts = {})
+    def regenerate_app_token1_with_http_info(app_id, token_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: TokensApiControllerApi.regenerate_app_token ...'
+        @api_client.config.logger.debug 'Calling API: TokensApiControllerApi.regenerate_app_token1 ...'
       end
       # verify the required parameter 'app_id' is set
       if @api_client.config.client_side_validation && app_id.nil?
-        fail ArgumentError, "Missing the required parameter 'app_id' when calling TokensApiControllerApi.regenerate_app_token"
+        fail ArgumentError, "Missing the required parameter 'app_id' when calling TokensApiControllerApi.regenerate_app_token1"
       end
       # verify the required parameter 'token_id' is set
       if @api_client.config.client_side_validation && token_id.nil?
-        fail ArgumentError, "Missing the required parameter 'token_id' when calling TokensApiControllerApi.regenerate_app_token"
+        fail ArgumentError, "Missing the required parameter 'token_id' when calling TokensApiControllerApi.regenerate_app_token1"
       end
       # resource path
       local_var_path = '/users-web/api/v3/apps/{appId}/tokens/{tokenId}/regenerate'.sub('{' + 'appId' + '}', app_id.to_s).sub('{' + 'tokenId' + '}', token_id.to_s)
@@ -241,42 +241,42 @@ module stcloud
         :auth_names => auth_names,
         :return_type => 'GenericApiResponse')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: TokensApiControllerApi#regenerate_app_token\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: TokensApiControllerApi#regenerate_app_token1\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
-    # Update app token (enable/disable)
+    # Update app token (enable/disable or name)
     # @param app_id appId
     # @param token_id tokenId
     # @param dto dto
     # @param [Hash] opts the optional parameters
     # @return [GenericApiResponse]
-    def update_app_token1(app_id, token_id, dto, opts = {})
-      data, _status_code, _headers = update_app_token1_with_http_info(app_id, token_id, dto, opts)
+    def update_app_token(app_id, token_id, dto, opts = {})
+      data, _status_code, _headers = update_app_token_with_http_info(app_id, token_id, dto, opts)
       data
     end
 
-    # Update app token (enable/disable)
+    # Update app token (enable/disable or name)
     # @param app_id appId
     # @param token_id tokenId
     # @param dto dto
     # @param [Hash] opts the optional parameters
     # @return [Array<(GenericApiResponse, Fixnum, Hash)>] GenericApiResponse data, response status code and response headers
-    def update_app_token1_with_http_info(app_id, token_id, dto, opts = {})
+    def update_app_token_with_http_info(app_id, token_id, dto, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: TokensApiControllerApi.update_app_token1 ...'
+        @api_client.config.logger.debug 'Calling API: TokensApiControllerApi.update_app_token ...'
       end
       # verify the required parameter 'app_id' is set
       if @api_client.config.client_side_validation && app_id.nil?
-        fail ArgumentError, "Missing the required parameter 'app_id' when calling TokensApiControllerApi.update_app_token1"
+        fail ArgumentError, "Missing the required parameter 'app_id' when calling TokensApiControllerApi.update_app_token"
       end
       # verify the required parameter 'token_id' is set
       if @api_client.config.client_side_validation && token_id.nil?
-        fail ArgumentError, "Missing the required parameter 'token_id' when calling TokensApiControllerApi.update_app_token1"
+        fail ArgumentError, "Missing the required parameter 'token_id' when calling TokensApiControllerApi.update_app_token"
       end
       # verify the required parameter 'dto' is set
       if @api_client.config.client_side_validation && dto.nil?
-        fail ArgumentError, "Missing the required parameter 'dto' when calling TokensApiControllerApi.update_app_token1"
+        fail ArgumentError, "Missing the required parameter 'dto' when calling TokensApiControllerApi.update_app_token"
       end
       # resource path
       local_var_path = '/users-web/api/v3/apps/{appId}/tokens/{tokenId}'.sub('{' + 'appId' + '}', app_id.to_s).sub('{' + 'tokenId' + '}', token_id.to_s)
@@ -305,7 +305,7 @@ module stcloud
         :auth_names => auth_names,
         :return_type => 'GenericApiResponse')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: TokensApiControllerApi#update_app_token1\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: TokensApiControllerApi#update_app_token\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
