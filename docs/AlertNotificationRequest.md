@@ -1,4 +1,4 @@
-# SematextCloud::AlertNotificationRequest
+# stcloud::AlertNotificationRequest
 
 ## Properties
 | Name                 | Type        | Description                                                                                                     | Notes      |

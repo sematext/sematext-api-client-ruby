@@ -1,4 +1,4 @@
-# SematextCloud::AppMetadata
+# stcloud::AppMetadata
 
 ## Properties
 | Name                           | Type                    | Description                                                | Notes      |

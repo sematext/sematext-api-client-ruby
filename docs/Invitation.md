@@ -1,9 +1,9 @@
-# SematextCloud::Invitation
+# stcloud::Invitation
 
 ## Properties
 | Name               | Type                           | Description                                       | Notes      |
 | ------------------ | ------------------------------ | ------------------------------------------------- | ---------- |
-| **app**            | [**App**](App.md)              | For invite request, only app.id needs to be set.  | [optional] |
+| **app**            | [**App**](App.md)              |                                                   | [optional] |
 | **apps**           | [**Array&lt;App&gt;**](App.md) | For invite request, only apps.id needs to be set. | [optional] |
 | **id**             | **Integer**                    |                                                   | [optional] |
 | **invite_date**    | **DateTime**                   |                                                   | [optional] |

@@ -1,4 +1,4 @@
-# SematextCloud::Error
+# stcloud::Error
 
 ## Properties
 | Name        | Type       | Description | Notes      |

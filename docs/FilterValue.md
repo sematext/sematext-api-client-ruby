@@ -1,4 +1,4 @@
-# SematextCloud::FilterValue
+# stcloud::FilterValue
 
 ## Properties
 | Name            | Type                    | Description | Notes      |

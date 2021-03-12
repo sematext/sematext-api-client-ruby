@@ -1,4 +1,4 @@
-# SematextCloud::NotificationIntegration
+# stcloud::NotificationIntegration
 
 ## Properties
 | Name                 | Type                           | Description | Notes      |

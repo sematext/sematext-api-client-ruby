@@ -1,4 +1,4 @@
-# SematextCloud::UserPermissions
+# stcloud::UserPermissions
 
 ## Properties
 | Name           | Type        | Description | Notes      |

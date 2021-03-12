@@ -1,4 +1,4 @@
-# SematextCloud::ReportInfo
+# stcloud::ReportInfo
 
 ## Properties
 | Name            | Type         | Description                             | Notes      |

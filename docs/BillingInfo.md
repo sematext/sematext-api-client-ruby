@@ -1,4 +1,4 @@
-# SematextCloud::BillingInfo
+# stcloud::BillingInfo
 
 ## Properties
 | Name               | Type        | Description | Notes      |
