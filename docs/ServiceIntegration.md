@@ -1,4 +1,4 @@
-# SematextCloud::ServiceIntegration
+# stcloud::ServiceIntegration
 
 ## Properties
 | Name                      | Type        | Description | Notes      |

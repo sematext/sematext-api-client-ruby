@@ -1,6 +1,6 @@
-# SematextCloud::AlertsApi
+# stcloud::AlertsApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to */*
 
 | Method                                                                                  | HTTP request                                                 | Description                |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------ | -------------------------- |
@@ -10,47 +10,45 @@ All URIs are relative to *https://localhost*
 | [**enable_alert_rule_using_put**](AlertsApi.md#enable_alert_rule_using_put)             | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/enable  | Enable alert rule          |
 | [**get_alert_rules_for_app_using_get**](AlertsApi.md#get_alert_rules_for_app_using_get) | **GET** /users-web/api/v3/apps/{appId}/alerts                | Get alert rules for an app |
 
-
 # **create_alert_using_post**
-> GenericApiResponse create_alert_using_post(dto)
+> AlertRuleResponse create_alert_using_post(body)
 
 Create alert rule
 
 ### Example
 ```ruby
 # load the gem
-require 'SematextCloud'
+require 'stcloud'
 # setup authorization
-SematextCloud.configure do |config|
+stcloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = SematextCloud::AlertsApi.new
-
-dto = SematextCloud::AlertRule.new # AlertRule | dto
+api_instance = stcloud::AlertsApi.new
+body = stcloud::AlertRule.new # AlertRule | dto
 
 
 begin
   #Create alert rule
-  result = api_instance.create_alert_using_post(dto)
+  result = api_instance.create_alert_using_post(body)
   p result
-rescue SematextCloud::ApiError => e
+rescue stcloud::ApiError => e
   puts "Exception when calling AlertsApi->create_alert_using_post: #{e}"
 end
 ```
 
 ### Parameters
 
-| Name    | Type                          | Description | Notes |
-| ------- | ----------------------------- | ----------- | ----- |
-| **dto** | [**AlertRule**](AlertRule.md) | dto         |
+| Name     | Type                          | Description | Notes |
+| -------- | ----------------------------- | ----------- | ----- |
+| **body** | [**AlertRule**](AlertRule.md) | dto         |
 
 ### Return type
 
-[**GenericApiResponse**](GenericApiResponse.md)
+[**AlertRuleResponse**](AlertRuleResponse.md)
 
 ### Authorization
 
@@ -64,24 +62,23 @@ end
 
 
 # **delete_alert_rule_using_delete**
-> GenericApiResponse delete_alert_rule_using_delete(updateable_alert_id)
+> GenericMapBasedApiResponse delete_alert_rule_using_delete(updateable_alert_id)
 
 Delete alert rule
 
 ### Example
 ```ruby
 # load the gem
-require 'SematextCloud'
+require 'stcloud'
 # setup authorization
-SematextCloud.configure do |config|
+stcloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = SematextCloud::AlertsApi.new
-
+api_instance = stcloud::AlertsApi.new
 updateable_alert_id = 789 # Integer | updateableAlertId
 
 
@@ -89,7 +86,7 @@ begin
   #Delete alert rule
   result = api_instance.delete_alert_rule_using_delete(updateable_alert_id)
   p result
-rescue SematextCloud::ApiError => e
+rescue stcloud::ApiError => e
   puts "Exception when calling AlertsApi->delete_alert_rule_using_delete: #{e}"
 end
 ```
@@ -102,7 +99,7 @@ end
 
 ### Return type
 
-[**GenericApiResponse**](GenericApiResponse.md)
+[**GenericMapBasedApiResponse**](GenericMapBasedApiResponse.md)
 
 ### Authorization
 
@@ -110,30 +107,29 @@ end
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
 
 # **disable_alert_rule_using_put**
-> GenericApiResponse disable_alert_rule_using_put(updateable_alert_id)
+> GenericMapBasedApiResponse disable_alert_rule_using_put(updateable_alert_id)
 
 Disable alert rule
 
 ### Example
 ```ruby
 # load the gem
-require 'SematextCloud'
+require 'stcloud'
 # setup authorization
-SematextCloud.configure do |config|
+stcloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = SematextCloud::AlertsApi.new
-
+api_instance = stcloud::AlertsApi.new
 updateable_alert_id = 789 # Integer | updateableAlertId
 
 
@@ -141,7 +137,7 @@ begin
   #Disable alert rule
   result = api_instance.disable_alert_rule_using_put(updateable_alert_id)
   p result
-rescue SematextCloud::ApiError => e
+rescue stcloud::ApiError => e
   puts "Exception when calling AlertsApi->disable_alert_rule_using_put: #{e}"
 end
 ```
@@ -154,7 +150,7 @@ end
 
 ### Return type
 
-[**GenericApiResponse**](GenericApiResponse.md)
+[**GenericMapBasedApiResponse**](GenericMapBasedApiResponse.md)
 
 ### Authorization
 
@@ -162,30 +158,29 @@ end
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
 
 # **enable_alert_rule_using_put**
-> GenericApiResponse enable_alert_rule_using_put(updateable_alert_id)
+> GenericMapBasedApiResponse enable_alert_rule_using_put(updateable_alert_id)
 
 Enable alert rule
 
 ### Example
 ```ruby
 # load the gem
-require 'SematextCloud'
+require 'stcloud'
 # setup authorization
-SematextCloud.configure do |config|
+stcloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = SematextCloud::AlertsApi.new
-
+api_instance = stcloud::AlertsApi.new
 updateable_alert_id = 789 # Integer | updateableAlertId
 
 
@@ -193,7 +188,7 @@ begin
   #Enable alert rule
   result = api_instance.enable_alert_rule_using_put(updateable_alert_id)
   p result
-rescue SematextCloud::ApiError => e
+rescue stcloud::ApiError => e
   puts "Exception when calling AlertsApi->enable_alert_rule_using_put: #{e}"
 end
 ```
@@ -206,7 +201,7 @@ end
 
 ### Return type
 
-[**GenericApiResponse**](GenericApiResponse.md)
+[**GenericMapBasedApiResponse**](GenericMapBasedApiResponse.md)
 
 ### Authorization
 
@@ -214,30 +209,29 @@ end
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
 
 # **get_alert_rules_for_app_using_get**
-> GenericApiResponse get_alert_rules_for_app_using_get(app_id)
+> AlertRulesResponse get_alert_rules_for_app_using_get(app_id)
 
 Get alert rules for an app
 
 ### Example
 ```ruby
 # load the gem
-require 'SematextCloud'
+require 'stcloud'
 # setup authorization
-SematextCloud.configure do |config|
+stcloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = SematextCloud::AlertsApi.new
-
+api_instance = stcloud::AlertsApi.new
 app_id = 789 # Integer | appId
 
 
@@ -245,7 +239,7 @@ begin
   #Get alert rules for an app
   result = api_instance.get_alert_rules_for_app_using_get(app_id)
   p result
-rescue SematextCloud::ApiError => e
+rescue stcloud::ApiError => e
   puts "Exception when calling AlertsApi->get_alert_rules_for_app_using_get: #{e}"
 end
 ```
@@ -258,7 +252,7 @@ end
 
 ### Return type
 
-[**GenericApiResponse**](GenericApiResponse.md)
+[**AlertRulesResponse**](AlertRulesResponse.md)
 
 ### Authorization
 
@@ -266,5 +260,5 @@ end
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json

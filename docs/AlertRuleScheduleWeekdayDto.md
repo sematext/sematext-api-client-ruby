@@ -1,4 +1,4 @@
-# SematextCloud::AlertRuleScheduleWeekdayDto
+# stcloud::AlertRuleScheduleWeekdayDto
 
 ## Properties
 | Name          | Type                                                                               | Description | Notes      |

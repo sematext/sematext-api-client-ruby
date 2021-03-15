@@ -1,4 +1,4 @@
-# SematextCloud::BasicAuthMethodDto
+# stcloud::BasicAuthMethodDto
 
 ## Properties
 | Name          | Type       | Description | Notes      |

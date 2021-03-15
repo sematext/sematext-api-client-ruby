@@ -1,4 +1,4 @@
-# SematextCloud::CloudWatchSettings
+# stcloud::CloudWatchSettings
 
 ## Properties
 | Name                | Type       | Description | Notes      |

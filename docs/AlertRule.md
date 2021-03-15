@@ -1,4 +1,4 @@
-# SematextCloud::AlertRule
+# stcloud::AlertRule
 
 ## Properties
 | Name                                           | Type                                                                           | Description | Notes      |

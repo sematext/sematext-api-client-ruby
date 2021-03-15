@@ -1,4 +1,4 @@
-# SematextCloud::App
+# stcloud::App
 
 ## Properties
 | Name                        | Type                                                | Description | Notes      |
@@ -30,6 +30,7 @@
 | **registration_date**       | **Integer**                                         |             | [optional] |
 | **status**                  | **String**                                          |             | [optional] |
 | **token**                   | **String**                                          |             | [optional] |
+| **tokens**                  | **Array&lt;String&gt;**                             |             | [optional] |
 | **trial_end_date**          | **Integer**                                         |             | [optional] |
 | **url_group_limit**         | **Integer**                                         |             | [optional] |
 | **user_roles**              | [**Array&lt;UserRole&gt;**](UserRole.md)            |             | [optional] |

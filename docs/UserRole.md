@@ -1,4 +1,4 @@
-# SematextCloud::UserRole
+# stcloud::UserRole
 
 ## Properties
 | Name            | Type       | Description | Notes      |

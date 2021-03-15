@@ -1,4 +1,4 @@
-# SematextCloud::AlertRuleScheduleTimeRangeDto
+# stcloud::AlertRuleScheduleTimeRangeDto
 
 ## Properties
 | Name      | Type       | Description | Notes      |

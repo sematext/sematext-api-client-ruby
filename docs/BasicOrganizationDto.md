@@ -1,4 +1,4 @@
-# SematextCloud::BasicOrganizationDto
+# stcloud::BasicOrganizationDto
 
 ## Properties
 | Name             | Type                                                         | Description | Notes      |

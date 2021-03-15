@@ -1,10 +1,10 @@
-# SematextCloud::UpdateAppInfo
+# stcloud::UpdateAppInfo
 
 ## Properties
 | Name                    | Type        | Description | Notes      |
 | ----------------------- | ----------- | ----------- | ---------- |
 | **description**         | **String**  |             | [optional] |
-| **ignore_percentage**   | **Integer** |             | [optional] |
+| **ignore_percentage**   | **Float**   |             | [optional] |
 | **max_events**          | **Integer** |             | [optional] |
 | **max_limit_mb**        | **Integer** |             | [optional] |
 | **name**                | **String**  |             | [optional] |
