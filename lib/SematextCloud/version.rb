@@ -11,5 +11,5 @@ Swagger Codegen version: 2.4.12
 =end
 
 module SematextCloud
-  VERSION = '0.3.0'
+  VERSION = '0.3.1'
 end
