@@ -1,6 +1,7 @@
-# stcloud::CreateAppInfo
+# SematextCloud::CreateAppInfo
 
 ## Properties
+
 | Name                | Type                              | Description | Notes      |
 | ------------------- | --------------------------------- | ----------- | ---------- |
 | **app_type**        | **String**                        |             | [optional] |

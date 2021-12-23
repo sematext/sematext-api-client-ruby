@@ -1,6 +1,7 @@
-# stcloud::Plan
+# SematextCloud::Plan
 
 ## Properties
+
 | Name                     | Type                            | Description | Notes      |
 | ------------------------ | ------------------------------- | ----------- | ---------- |
 | **app_type**             | **String**                      |             | [optional] |

@@ -1,6 +1,7 @@
-# stcloud::SubscriptionDashboardDto
+# SematextCloud::SubscriptionDashboardDto
 
 ## Properties
+
 | Name             | Type         | Description | Notes      |
 | ---------------- | ------------ | ----------- | ---------- |
 | **addresses**    | **String**   |             | [optional] |

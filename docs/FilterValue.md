@@ -1,6 +1,7 @@
-# stcloud::FilterValue
+# SematextCloud::FilterValue
 
 ## Properties
+
 | Name            | Type                    | Description | Notes      |
 | --------------- | ----------------------- | ----------- | ---------- |
 | **agg_type**    | **String**              |             | [optional] |

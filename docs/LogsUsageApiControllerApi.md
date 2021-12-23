@@ -1,4 +1,4 @@
-# stcloud::LogsUsageApiControllerApi
+# SematextCloud::LogsUsageApiControllerApi
 
 All URIs are relative to */*
 
@@ -7,23 +7,25 @@ All URIs are relative to */*
 | [**get_for_range_using_get**](LogsUsageApiControllerApi.md#get_for_range_using_get) | **GET** /logsene-reports/api/v3/apps/{appId}/usage/{from}/{to} | getForRange |
 
 # **get_for_range_using_get**
+
 > UsageResponse get_for_range_using_get(app_id, from, to)
 
 getForRange
 
 ### Example
+
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::LogsUsageApiControllerApi.new
+api_instance = SematextCloud::LogsUsageApiControllerApi.new
 app_id = 789 # Integer | appId
 from = 789 # Integer | from
 to = 789 # Integer | to
@@ -33,7 +35,7 @@ begin
   #getForRange
   result = api_instance.get_for_range_using_get(app_id, from, to)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling LogsUsageApiControllerApi->get_for_range_using_get: #{e}"
 end
 ```
@@ -56,5 +58,5 @@ end
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json

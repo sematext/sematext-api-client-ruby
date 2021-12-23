@@ -1,6 +1,7 @@
-# stcloud::ServiceIntegration
+# SematextCloud::ServiceIntegration
 
 ## Properties
+
 | Name                      | Type        | Description | Notes      |
 | ------------------------- | ----------- | ----------- | ---------- |
 | **app_type_id**           | **Integer** |             | [optional] |

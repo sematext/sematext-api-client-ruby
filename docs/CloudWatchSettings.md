@@ -1,6 +1,7 @@
-# stcloud::CloudWatchSettings
+# SematextCloud::CloudWatchSettings
 
 ## Properties
+
 | Name                | Type       | Description | Notes      |
 | ------------------- | ---------- | ----------- | ---------- |
 | **access_key**      | **String** |             | [optional] |

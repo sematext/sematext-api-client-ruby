@@ -1,6 +1,7 @@
-# stcloud::AlertRule
+# SematextCloud::AlertRule
 
 ## Properties
+
 | Name                                           | Type                                                                           | Description | Notes      |
 | ---------------------------------------------- | ------------------------------------------------------------------------------ | ----------- | ---------- |
 | **account_email**                              | **String**                                                                     |             | [optional] |

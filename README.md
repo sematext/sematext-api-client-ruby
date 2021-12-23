@@ -53,7 +53,7 @@ Refer to below link for deeper information on the API itself.
 To build the Ruby code into a gem:
 
 ```shell
-gem build SematextCloud.gemspec
+gem build stcloud.gemspec
 ```
 
 Then either install the gem locally:

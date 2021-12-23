@@ -1,6 +1,7 @@
-# stcloud::BillingInfo
+# SematextCloud::BillingInfo
 
 ## Properties
+
 | Name               | Type        | Description | Notes      |
 | ------------------ | ----------- | ----------- | ---------- |
 | **credit_card_id** | **Integer** |             | [optional] |

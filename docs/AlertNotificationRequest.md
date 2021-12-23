@@ -1,6 +1,7 @@
-# stcloud::AlertNotificationRequest
+# SematextCloud::AlertNotificationRequest
 
 ## Properties
+
 | Name                 | Type        | Description                                                                                                     | Notes      |
 | -------------------- | ----------- | --------------------------------------------------------------------------------------------------------------- | ---------- |
 | **default_interval** | **Integer** |                                                                                                                 | [optional] |

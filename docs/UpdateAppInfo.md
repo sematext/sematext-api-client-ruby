@@ -1,6 +1,7 @@
-# stcloud::UpdateAppInfo
+# SematextCloud::UpdateAppInfo
 
 ## Properties
+
 | Name                    | Type        | Description | Notes      |
 | ----------------------- | ----------- | ----------- | ---------- |
 | **description**         | **String**  |             | [optional] |

@@ -1,6 +1,7 @@
-# stcloud::UpdatePlanResponse
+# SematextCloud::UpdatePlanResponse
 
 ## Properties
+
 | Name        | Type                                                      | Description | Notes      |
 | ----------- | --------------------------------------------------------- | ----------- | ---------- |
 | **data**    | [**UpdatePlanResponseEntry**](UpdatePlanResponseEntry.md) |             | [optional] |
