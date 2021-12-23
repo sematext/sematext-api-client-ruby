@@ -1,6 +1,7 @@
-# stcloud::App
+# SematextCloud::App
 
 ## Properties
+
 | Name                        | Type                                                | Description | Notes      |
 | --------------------------- | --------------------------------------------------- | ----------- | ---------- |
 | **ajax_threshold**          | **Integer**                                         |             | [optional] |

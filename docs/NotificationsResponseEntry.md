@@ -1,6 +1,7 @@
-# stcloud::NotificationsResponseEntry
+# SematextCloud::NotificationsResponseEntry
 
 ## Properties
+
 | Name              | Type                                                       | Description | Notes      |
 | ----------------- | ---------------------------------------------------------- | ----------- | ---------- |
 | **_end**          | **String**                                                 |             | [optional] |

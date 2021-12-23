@@ -1,6 +1,7 @@
-# stcloud::UsageResponse
+# SematextCloud::UsageResponse
 
 ## Properties
+
 | Name        | Type                                            | Description | Notes      |
 | ----------- | ----------------------------------------------- | ----------- | ---------- |
 | **data**    | [**UsageResponseEntry**](UsageResponseEntry.md) |             | [optional] |

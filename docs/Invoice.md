@@ -1,6 +1,7 @@
-# stcloud::Invoice
+# SematextCloud::Invoice
 
 ## Properties
+
 | Name             | Type                                                                       | Description | Notes      |
 | ---------------- | -------------------------------------------------------------------------- | ----------- | ---------- |
 | **all_charges**  | [**Array&lt;ChargesDetailsResponseDto&gt;**](ChargesDetailsResponseDto.md) |             | [optional] |

@@ -1,6 +1,7 @@
-# stcloud::TokenDto
+# SematextCloud::TokenDto
 
 ## Properties
+
 | Name           | Type         | Description | Notes      |
 | -------------- | ------------ | ----------- | ---------- |
 | **created_at** | **DateTime** |             | [optional] |

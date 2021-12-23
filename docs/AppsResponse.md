@@ -1,6 +1,7 @@
-# stcloud::AppsResponse
+# SematextCloud::AppsResponse
 
 ## Properties
+
 | Name        | Type                                          | Description | Notes      |
 | ----------- | --------------------------------------------- | ----------- | ---------- |
 | **data**    | [**AppsResponseEntry**](AppsResponseEntry.md) |             | [optional] |

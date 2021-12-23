@@ -1,6 +1,7 @@
-# stcloud::BasicOrganizationDto
+# SematextCloud::BasicOrganizationDto
 
 ## Properties
+
 | Name             | Type                                                         | Description | Notes      |
 | ---------------- | ------------------------------------------------------------ | ----------- | ---------- |
 | **auth_methods** | [**Array&lt;BasicAuthMethodDto&gt;**](BasicAuthMethodDto.md) |             | [optional] |

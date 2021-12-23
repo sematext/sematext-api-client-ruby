@@ -1,6 +1,7 @@
-# stcloud::LimitChangeEventDTO
+# SematextCloud::LimitChangeEventDTO
 
 ## Properties
+
 | Name           | Type         | Description | Notes      |
 | -------------- | ------------ | ----------- | ---------- |
 | **event_time** | **DateTime** |             | [optional] |

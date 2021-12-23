@@ -1,6 +1,7 @@
-# stcloud::AppDescription
+# SematextCloud::AppDescription
 
 ## Properties
+
 | Name            | Type       | Description | Notes      |
 | --------------- | ---------- | ----------- | ---------- |
 | **description** | **String** |             | [optional] |

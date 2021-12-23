@@ -1,4 +1,4 @@
-# stcloud::AwsSettingsControllerApi
+# SematextCloud::AwsSettingsControllerApi
 
 All URIs are relative to */*
 
@@ -7,6 +7,7 @@ All URIs are relative to */*
 | [**update_using_put1**](AwsSettingsControllerApi.md#update_using_put1) | **PUT** /users-web/api/v3/apps/{appId}/aws | Update App&#x27;s AWS CloudWatch settings |
 
 # **update_using_put1**
+
 > CloudWatchSettingsResponse update_using_put1(bodyapp_id)
 
 Update App's AWS CloudWatch settings
@@ -14,19 +15,20 @@ Update App's AWS CloudWatch settings
 Applicable only for AWS Apps
 
 ### Example
+
 ```ruby
 # load the gem
-require 'stcloud'
+require 'SematextCloud'
 # setup authorization
-stcloud.configure do |config|
+SematextCloud.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
 end
 
-api_instance = stcloud::AwsSettingsControllerApi.new
-body = stcloud::CloudWatchSettings.new # CloudWatchSettings | dto
+api_instance = SematextCloud::AwsSettingsControllerApi.new
+body = SematextCloud::CloudWatchSettings.new # CloudWatchSettings | dto
 app_id = 789 # Integer | appId
 
 
@@ -34,7 +36,7 @@ begin
   #Update App's AWS CloudWatch settings
   result = api_instance.update_using_put1(bodyapp_id)
   p result
-rescue stcloud::ApiError => e
+rescue SematextCloud::ApiError => e
   puts "Exception when calling AwsSettingsControllerApi->update_using_put1: #{e}"
 end
 ```
@@ -56,5 +58,5 @@ end
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json

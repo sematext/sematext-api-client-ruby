@@ -1,6 +1,7 @@
-# stcloud::MailReportResponse
+# SematextCloud::MailReportResponse
 
 ## Properties
+
 | Name        | Type                                                                      | Description | Notes      |
 | ----------- | ------------------------------------------------------------------------- | ----------- | ---------- |
 | **data**    | [**MailReportResponseResponseEntry**](MailReportResponseResponseEntry.md) |             | [optional] |

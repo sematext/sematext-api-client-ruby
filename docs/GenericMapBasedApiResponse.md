@@ -1,6 +1,7 @@
-# stcloud::GenericMapBasedApiResponse
+# SematextCloud::GenericMapBasedApiResponse
 
 ## Properties
+
 | Name        | Type                               | Description | Notes      |
 | ----------- | ---------------------------------- | ----------- | ---------- |
 | **data**    | **Object**                         |             | [optional] |

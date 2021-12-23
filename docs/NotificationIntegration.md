@@ -1,6 +1,7 @@
-# stcloud::NotificationIntegration
+# SematextCloud::NotificationIntegration
 
 ## Properties
+
 | Name                 | Type                           | Description | Notes      |
 | -------------------- | ------------------------------ | ----------- | ---------- |
 | **applicability**    | **String**                     |             | [optional] |

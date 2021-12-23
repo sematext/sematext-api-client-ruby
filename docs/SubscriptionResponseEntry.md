@@ -1,6 +1,7 @@
-# stcloud::SubscriptionResponseEntry
+# SematextCloud::SubscriptionResponseEntry
 
 ## Properties
+
 | Name             | Type                                | Description | Notes      |
 | ---------------- | ----------------------------------- | ----------- | ---------- |
 | **subscription** | [**Subscription**](Subscription.md) |             | [optional] |
