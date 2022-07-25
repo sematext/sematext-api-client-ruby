@@ -4,13 +4,13 @@ All URIs are relative to */*
 
 | Method                                                                               | HTTP request                                                       | Description            |
 | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------ | ---------------------- |
-| [**get_detailed_invoice_using_get**](BillingApi.md#get_detailed_invoice_using_get)   | **GET** /users-web/api/v3/billing/invoice/{service}/{year}/{month} | Get invoice details    |
+| [**get_detailed_invoice_using_get1**](BillingApi.md#get_detailed_invoice_using_get1) | **GET** /users-web/api/v3/billing/invoice/{service}/{year}/{month} | Get invoice details    |
 | [**list_available_plans_using_get1**](BillingApi.md#list_available_plans_using_get1) | **GET** /users-web/api/v3/billing/availablePlans                   | Get available plans    |
-| [**update_plan_using_put**](BillingApi.md#update_plan_using_put)                     | **PUT** /users-web/api/v3/billing/info/{appId}                     | Update plan for an app |
+| [**update_plan_using_put1**](BillingApi.md#update_plan_using_put1)                   | **PUT** /users-web/api/v3/billing/info/{appId}                     | Update plan for an app |
 
-# **get_detailed_invoice_using_get**
+# **get_detailed_invoice_using_get1**
 
-> InvoiceResponse get_detailed_invoice_using_get(service, year, month)
+> InvoiceResponse get_detailed_invoice_using_get1(service, year, month)
 
 Get invoice details
 
@@ -35,10 +35,10 @@ month = 56 # Integer | month
 
 begin
   #Get invoice details
-  result = api_instance.get_detailed_invoice_using_get(service, year, month)
+  result = api_instance.get_detailed_invoice_using_get1(service, year, month)
   p result
 rescue SematextCloud::ApiError => e
-  puts "Exception when calling BillingApi->get_detailed_invoice_using_get: #{e}"
+  puts "Exception when calling BillingApi->get_detailed_invoice_using_get1: #{e}"
 end
 ```
 
@@ -117,9 +117,9 @@ end
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
-# **update_plan_using_put**
+# **update_plan_using_put1**
 
-> UpdatePlanResponse update_plan_using_put(bodyapp_id)
+> UpdatePlanResponse update_plan_using_put1(bodyapp_id)
 
 Update plan for an app
 
@@ -143,10 +143,10 @@ app_id = 789 # Integer | appId
 
 begin
   #Update plan for an app
-  result = api_instance.update_plan_using_put(bodyapp_id)
+  result = api_instance.update_plan_using_put1(bodyapp_id)
   p result
 rescue SematextCloud::ApiError => e
-  puts "Exception when calling BillingApi->update_plan_using_put: #{e}"
+  puts "Exception when calling BillingApi->update_plan_using_put1: #{e}"
 end
 ```
 

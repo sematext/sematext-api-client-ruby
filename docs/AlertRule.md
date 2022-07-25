@@ -38,6 +38,7 @@
 | **notification_emails**                        | **Array&lt;String&gt;**                                                        |             | [optional] |
 | **notification_integrations**                  | [**Array&lt;NotificationIntegration&gt;**](NotificationIntegration.md)         |             | [optional] |
 | **notifications_enabled**                      | **BOOLEAN**                                                                    |             | [optional] |
+| **priority**                                   | **String**                                                                     |             | [optional] |
 | **query**                                      | **String**                                                                     |             | [optional] |
 | **report_name**                                | **String**                                                                     |             | [optional] |
 | **rule_key**                                   | **Integer**                                                                    |             | [optional] |
