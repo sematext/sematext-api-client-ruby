@@ -2,14 +2,14 @@
 
 All URIs are relative to */*
 
-| Method                                                                                                                  | HTTP request                                                 | Description                        |
-| ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------- |
-| [**get_alert_notifications_for_app_using_post**](AlertNotificationsApi.md#get_alert_notifications_for_app_using_post)   | **POST** /users-web/api/v3/apps/{appId}/notifications/alerts | Get alert notifications for an app |
-| [**get_alert_notifications_for_user_using_post**](AlertNotificationsApi.md#get_alert_notifications_for_user_using_post) | **POST** /users-web/api/v3/notifications/alerts              | Get alert notifications for a user |
+| Method                                                                                                                    | HTTP request                                                 | Description                        |
+| ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------- |
+| [**get_alert_notifications_for_app_using_post1**](AlertNotificationsApi.md#get_alert_notifications_for_app_using_post1)   | **POST** /users-web/api/v3/apps/{appId}/notifications/alerts | Get alert notifications for an app |
+| [**get_alert_notifications_for_user_using_post1**](AlertNotificationsApi.md#get_alert_notifications_for_user_using_post1) | **POST** /users-web/api/v3/notifications/alerts              | Get alert notifications for a user |
 
-# **get_alert_notifications_for_app_using_post**
+# **get_alert_notifications_for_app_using_post1**
 
-> NotificationsResponse get_alert_notifications_for_app_using_post(bodyapp_id)
+> NotificationsResponse get_alert_notifications_for_app_using_post1(bodyapp_id)
 
 Get alert notifications for an app
 
@@ -35,10 +35,10 @@ app_id = 789 # Integer | appId
 
 begin
   #Get alert notifications for an app
-  result = api_instance.get_alert_notifications_for_app_using_post(bodyapp_id)
+  result = api_instance.get_alert_notifications_for_app_using_post1(bodyapp_id)
   p result
 rescue SematextCloud::ApiError => e
-  puts "Exception when calling AlertNotificationsApi->get_alert_notifications_for_app_using_post: #{e}"
+  puts "Exception when calling AlertNotificationsApi->get_alert_notifications_for_app_using_post1: #{e}"
 end
 ```
 
@@ -62,9 +62,9 @@ end
 - **Content-Type**: application/json
 - **Accept**: application/json
 
-# **get_alert_notifications_for_user_using_post**
+# **get_alert_notifications_for_user_using_post1**
 
-> NotificationsResponse get_alert_notifications_for_user_using_post(body)
+> NotificationsResponse get_alert_notifications_for_user_using_post1(body)
 
 Get alert notifications for a user
 
@@ -89,10 +89,10 @@ body = SematextCloud::AlertNotificationRequest.new # AlertNotificationRequest | 
 
 begin
   #Get alert notifications for a user
-  result = api_instance.get_alert_notifications_for_user_using_post(body)
+  result = api_instance.get_alert_notifications_for_user_using_post1(body)
   p result
 rescue SematextCloud::ApiError => e
-  puts "Exception when calling AlertNotificationsApi->get_alert_notifications_for_user_using_post: #{e}"
+  puts "Exception when calling AlertNotificationsApi->get_alert_notifications_for_user_using_post1: #{e}"
 end
 ```
 

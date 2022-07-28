@@ -2,13 +2,13 @@
 
 All URIs are relative to */*
 
-| Method                                                                   | HTTP request                      | Description           |
-| ------------------------------------------------------------------------ | --------------------------------- | --------------------- |
-| [**create_spm_application**](MonitoringAppApi.md#create_spm_application) | **POST** /spm-reports/api/v3/apps | Create Monitoring App |
+| Method                                                                     | HTTP request                      | Description           |
+| -------------------------------------------------------------------------- | --------------------------------- | --------------------- |
+| [**create_spm_application1**](MonitoringAppApi.md#create_spm_application1) | **POST** /spm-reports/api/v3/apps | Create Monitoring App |
 
-# **create_spm_application**
+# **create_spm_application1**
 
-> AppsResponse create_spm_application(body)
+> AppsResponse create_spm_application1(body)
 
 Create Monitoring App
 
@@ -31,10 +31,10 @@ body = SematextCloud::CreateAppInfo.new # CreateAppInfo | Details of the applica
 
 begin
   #Create Monitoring App
-  result = api_instance.create_spm_application(body)
+  result = api_instance.create_spm_application1(body)
   p result
 rescue SematextCloud::ApiError => e
-  puts "Exception when calling MonitoringAppApi->create_spm_application: #{e}"
+  puts "Exception when calling MonitoringAppApi->create_spm_application1: #{e}"
 end
 ```
 

@@ -2,13 +2,13 @@
 
 All URIs are relative to */*
 
-| Method                                                                 | HTTP request                               | Description                               |
-| ---------------------------------------------------------------------- | ------------------------------------------ | ----------------------------------------- |
-| [**update_using_put1**](AwsSettingsControllerApi.md#update_using_put1) | **PUT** /users-web/api/v3/apps/{appId}/aws | Update App&#x27;s AWS CloudWatch settings |
+| Method                                                               | HTTP request                               | Description                               |
+| -------------------------------------------------------------------- | ------------------------------------------ | ----------------------------------------- |
+| [**update_using_put**](AwsSettingsControllerApi.md#update_using_put) | **PUT** /users-web/api/v3/apps/{appId}/aws | Update App&#x27;s AWS CloudWatch settings |
 
-# **update_using_put1**
+# **update_using_put**
 
-> CloudWatchSettingsResponse update_using_put1(bodyapp_id)
+> CloudWatchSettingsResponse update_using_put(bodyapp_id)
 
 Update App's AWS CloudWatch settings
 
@@ -34,10 +34,10 @@ app_id = 789 # Integer | appId
 
 begin
   #Update App's AWS CloudWatch settings
-  result = api_instance.update_using_put1(bodyapp_id)
+  result = api_instance.update_using_put(bodyapp_id)
   p result
 rescue SematextCloud::ApiError => e
-  puts "Exception when calling AwsSettingsControllerApi->update_using_put1: #{e}"
+  puts "Exception when calling AwsSettingsControllerApi->update_using_put: #{e}"
 end
 ```
 

@@ -2,13 +2,13 @@
 
 All URIs are relative to */*
 
-| Method                                                                       | HTTP request                                                        | Description                               |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------------------------------- |
-| [**create_app_token1**](TokensApiControllerApi.md#create_app_token1)         | **POST** /users-web/api/v3/apps/{appId}/tokens                      | Create new app token                      |
-| [**delete_app_token1**](TokensApiControllerApi.md#delete_app_token1)         | **DELETE** /users-web/api/v3/apps/{appId}/tokens/{tokenId}          | Delete app token                          |
-| [**get_app_tokens**](TokensApiControllerApi.md#get_app_tokens)               | **GET** /users-web/api/v3/apps/{appId}/tokens                       | Get app available tokens                  |
-| [**regenerate_app_token1**](TokensApiControllerApi.md#regenerate_app_token1) | **POST** /users-web/api/v3/apps/{appId}/tokens/{tokenId}/regenerate | Regenerate app token)                     |
-| [**update_app_token1**](TokensApiControllerApi.md#update_app_token1)         | **PUT** /users-web/api/v3/apps/{appId}/tokens/{tokenId}             | Update app token (enable/disable or name) |
+| Method                                                                     | HTTP request                                                        | Description                               |
+| -------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------------------------------- |
+| [**create_app_token1**](TokensApiControllerApi.md#create_app_token1)       | **POST** /users-web/api/v3/apps/{appId}/tokens                      | Create new app token                      |
+| [**delete_app_token1**](TokensApiControllerApi.md#delete_app_token1)       | **DELETE** /users-web/api/v3/apps/{appId}/tokens/{tokenId}          | Delete app token                          |
+| [**get_app_tokens1**](TokensApiControllerApi.md#get_app_tokens1)           | **GET** /users-web/api/v3/apps/{appId}/tokens                       | Get app available tokens                  |
+| [**regenerate_app_token**](TokensApiControllerApi.md#regenerate_app_token) | **POST** /users-web/api/v3/apps/{appId}/tokens/{tokenId}/regenerate | Regenerate app token)                     |
+| [**update_app_token1**](TokensApiControllerApi.md#update_app_token1)       | **PUT** /users-web/api/v3/apps/{appId}/tokens/{tokenId}             | Update app token (enable/disable or name) |
 
 # **create_app_token1**
 
@@ -116,9 +116,9 @@ end
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
-# **get_app_tokens**
+# **get_app_tokens1**
 
-> TokensResponse get_app_tokens(app_id)
+> TokensResponse get_app_tokens1(app_id)
 
 Get app available tokens
 
@@ -141,10 +141,10 @@ app_id = 789 # Integer | appId
 
 begin
   #Get app available tokens
-  result = api_instance.get_app_tokens(app_id)
+  result = api_instance.get_app_tokens1(app_id)
   p result
 rescue SematextCloud::ApiError => e
-  puts "Exception when calling TokensApiControllerApi->get_app_tokens: #{e}"
+  puts "Exception when calling TokensApiControllerApi->get_app_tokens1: #{e}"
 end
 ```
 
@@ -167,9 +167,9 @@ end
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
-# **regenerate_app_token1**
+# **regenerate_app_token**
 
-> TokenResponse regenerate_app_token1(app_id, token_id)
+> TokenResponse regenerate_app_token(app_id, token_id)
 
 Regenerate app token)
 
@@ -193,10 +193,10 @@ token_id = 789 # Integer | tokenId
 
 begin
   #Regenerate app token)
-  result = api_instance.regenerate_app_token1(app_id, token_id)
+  result = api_instance.regenerate_app_token(app_id, token_id)
   p result
 rescue SematextCloud::ApiError => e
-  puts "Exception when calling TokensApiControllerApi->regenerate_app_token1: #{e}"
+  puts "Exception when calling TokensApiControllerApi->regenerate_app_token: #{e}"
 end
 ```
 

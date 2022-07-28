@@ -2,13 +2,13 @@
 
 All URIs are relative to */*
 
-| Method                                                                                    | HTTP request                                                 | Description                |
-| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------ | -------------------------- |
-| [**create_alert_using_post**](AlertsApi.md#create_alert_using_post)                       | **POST** /users-web/api/v3/alerts                            | Create alert rule          |
-| [**delete_alert_rule_using_delete1**](AlertsApi.md#delete_alert_rule_using_delete1)       | **DELETE** /users-web/api/v3/alerts/{updateableAlertId}      | Delete alert rule          |
-| [**disable_alert_rule_using_put**](AlertsApi.md#disable_alert_rule_using_put)             | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/disable | Disable alert rule         |
-| [**enable_alert_rule_using_put**](AlertsApi.md#enable_alert_rule_using_put)               | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/enable  | Enable alert rule          |
-| [**get_alert_rules_for_app_using_get1**](AlertsApi.md#get_alert_rules_for_app_using_get1) | **GET** /users-web/api/v3/apps/{appId}/alerts                | Get alert rules for an app |
+| Method                                                                                  | HTTP request                                                 | Description                |
+| --------------------------------------------------------------------------------------- | ------------------------------------------------------------ | -------------------------- |
+| [**create_alert_using_post**](AlertsApi.md#create_alert_using_post)                     | **POST** /users-web/api/v3/alerts                            | Create alert rule          |
+| [**delete_alert_rule_using_delete**](AlertsApi.md#delete_alert_rule_using_delete)       | **DELETE** /users-web/api/v3/alerts/{updateableAlertId}      | Delete alert rule          |
+| [**disable_alert_rule_using_put**](AlertsApi.md#disable_alert_rule_using_put)           | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/disable | Disable alert rule         |
+| [**enable_alert_rule_using_put**](AlertsApi.md#enable_alert_rule_using_put)             | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/enable  | Enable alert rule          |
+| [**get_alert_rules_for_app_using_get**](AlertsApi.md#get_alert_rules_for_app_using_get) | **GET** /users-web/api/v3/apps/{appId}/alerts                | Get alert rules for an app |
 
 # **create_alert_using_post**
 
@@ -61,9 +61,9 @@ end
 - **Content-Type**: application/json
 - **Accept**: application/json
 
-# **delete_alert_rule_using_delete1**
+# **delete_alert_rule_using_delete**
 
-> GenericMapBasedApiResponse delete_alert_rule_using_delete1(updateable_alert_id)
+> GenericMapBasedApiResponse delete_alert_rule_using_delete(updateable_alert_id)
 
 Delete alert rule
 
@@ -86,10 +86,10 @@ updateable_alert_id = 789 # Integer | updateableAlertId
 
 begin
   #Delete alert rule
-  result = api_instance.delete_alert_rule_using_delete1(updateable_alert_id)
+  result = api_instance.delete_alert_rule_using_delete(updateable_alert_id)
   p result
 rescue SematextCloud::ApiError => e
-  puts "Exception when calling AlertsApi->delete_alert_rule_using_delete1: #{e}"
+  puts "Exception when calling AlertsApi->delete_alert_rule_using_delete: #{e}"
 end
 ```
 
@@ -214,9 +214,9 @@ end
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
-# **get_alert_rules_for_app_using_get1**
+# **get_alert_rules_for_app_using_get**
 
-> AlertRulesResponse get_alert_rules_for_app_using_get1(app_id)
+> AlertRulesResponse get_alert_rules_for_app_using_get(app_id)
 
 Get alert rules for an app
 
@@ -239,10 +239,10 @@ app_id = 789 # Integer | appId
 
 begin
   #Get alert rules for an app
-  result = api_instance.get_alert_rules_for_app_using_get1(app_id)
+  result = api_instance.get_alert_rules_for_app_using_get(app_id)
   p result
 rescue SematextCloud::ApiError => e
-  puts "Exception when calling AlertsApi->get_alert_rules_for_app_using_get1: #{e}"
+  puts "Exception when calling AlertsApi->get_alert_rules_for_app_using_get: #{e}"
 end
 ```
 
